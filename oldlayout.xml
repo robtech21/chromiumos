@@ -3,7 +3,7 @@
   <remote  name="cros"
            fetch="http://git.chromium.org"
            review="gerrit.chromium.org/gerrit" />
-  <default revision="refs/heads/master"
+  <default revision="refs/heads/0.12.369.B"
            remote="cros" />
 
   <notice>
@@ -31,7 +31,6 @@ Your sources have been sync'd successfully.
            name="chromiumos/platform/crash-reporter" />
   <project path="src/platform/cromo" name="chromiumos/platform/cromo" />
   <project path="src/platform/cros" name="chromiumos/platform/cros" />
-  <project path="src/platform/crosh" name="chromiumos/platform/crosh" />
   <project path="src/platform/cros-disks" name="chromiumos/platform/cros-disks" />
   <project path="src/platform/cros_boot_mode"
            name="chromiumos/platform/cros_boot_mode" />
@@ -75,10 +74,10 @@ Your sources have been sync'd successfully.
   <project path="src/platform/power_manager"
            name="chromiumos/platform/power_manager" />
   <project path="src/platform/saft" name="chromiumos/platform/saft" />
-  <project path="src/platform/shill" name="chromiumos/platform/shill" />
   <project path="src/platform/speech_synthesis"
            name="chromiumos/platform/speech_synthesis" />
   <project path="src/platform/theme" name="chromiumos/platform/theme" />
+  <project path="src/platform/tpm_init" name="chromiumos/platform/tpm_init" />
   <project path="src/platform/tpm_lite" name="chromiumos/platform/tpm_lite" />
   <project path="src/platform/uboot-env" name="chromiumos/platform/uboot-env" />
   <project path="src/platform/u-boot-config"
@@ -109,10 +108,10 @@ Your sources have been sync'd successfully.
            name="chromiumos/third_party/dhcpcd" />
   <project path="src/third_party/flashrom"
            name="chromiumos/third_party/flashrom" />
+  <project path="src/third_party/hdctools"
+           name="chromiumos/third_party/hdctools" />
   <project path="src/third_party/khronos"
            name="chromiumos/third_party/khronos" />
-  <project path="src/third_party/ktop"
-           name="chromiumos/third_party/ktop" />
   <project path="src/third_party/libscrypt"
            name="chromiumos/third_party/libscrypt" />
   <project path="src/third_party/marvell"
@@ -150,22 +149,26 @@ Your sources have been sync'd successfully.
            name="chromiumos/third_party/kernel" />
   <project path="src/third_party/kernel-next"
            name="chromiumos/third_party/kernel-next"
-           revision="refs/heads/chromeos-2.6.38" />
+           revision="refs/heads/0.12.369.B" />
   <project path="src/third_party/flimflam"
            name="chromiumos/platform/flimflam" />
+  <project path="src/third_party/gpt"
+           name="chromiumos/third_party/gpt" />
   <project path="src/third_party/xf86-input-synaptics"
            name="chromiumos/third_party/xf86-input-synaptics" />
   <project path="src/third_party/u-boot/files"
            name="chromiumos/third_party/u-boot" />
   <project path="src/third_party/u-boot-next/files"
            name="chromiumos/third_party/u-boot-next"
-           revision="refs/heads/chromeos-v2010.09" />
+           revision="refs/heads/0.12.369.B" />
   <project path="src/third_party/wpa_supplicant"
            name="chromiumos/third_party/hostap" />
   <project path="src/third_party/portage"
            name="chromiumos/overlays/portage" />
   <project path="src/third_party/portage-stable"
            name="chromiumos/overlays/portage-stable" />
+  <project path="src/third_party/portage_tool"
+           name="chromiumos/third_party/portage_tool" />
   <project path="src/third_party/chromiumos-overlay"
            name="chromiumos/overlays/chromiumos-overlay" >
            <copyfile src="codereview.settings" dest="codereview.settings" />
@@ -182,4 +185,6 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/grub2" name="chromiumos/third_party/grub2" />
   <project path="src/third_party/dbus-c++"
            name="chromiumos/third_party/dbus-cplusplus" />
+
 </manifest>
+
