@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><manifest>
+  <!-- This manifest exists to allow Project SDK tryjobs. It does NOT
+       define what will be present in versioned SDK manifests, which
+       are derived via manifest_version.ConvertToProjectSdkManifest().
+       -->
+
+  <include name="_remotes.xml"/>
+  <default remote="cros" revision="refs/heads/master" sync-j="8"/>
+  <notice>
+Your sources have been sync'd successfully.
+  </notice>
+  <project groups="minilayout,buildtools" name="chromiumos/repohooks" path="src/repohooks"/>
+  <repo-hooks enabled-list="pre-upload" in-project="chromiumos/repohooks"/>
+  <project groups="minilayout,buildtools" name="chromiumos/chromite" path="chromite">
+    <copyfile dest="AUTHORS" src="AUTHORS"/>
+    <copyfile dest="LICENSE" src="LICENSE"/>
+  </project>
+  <project groups="minilayout,buildtools" name="chromiumos/third_party/gdata" path="chromite/third_party/gdata"/>
+  <project groups="minilayout,buildtools" name="chromiumos/third_party/pyelftools" path="chromite/third_party/pyelftools" revision="refs/heads/master-0.22"/>
+  <project groups="minilayout,buildtools" name="external/swarming.client" path="chromite/third_party/swarming.client" remote="chromium" revision="27f03da8d26f0be8ab26fb39847d1d456681936b"/>
+  <project groups="minilayout,buildtools" name="chromiumos/platform/crostestutils" path="src/platform/crostestutils"/>
+  <project groups="minilayout,buildtools" name="chromiumos/platform/dev-util" path="src/platform/dev"/>
+  <project groups="minilayout" name="chromiumos/platform/factory-utils" path="src/platform/factory-utils"/>
+  <project groups="minilayout" name="chromiumos/overlays/board-overlays" path="src/overlays"/>
+  <project groups="minilayout,buildtools" name="chromiumos/platform/crosutils" path="src/scripts"/>
+  <project groups="minilayout" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable"/>
+  <project groups="minilayout" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" sync-c="true"/>
+  <project groups="minilayout" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay"/>
+  <!-- Chromium repositories. -->
+  <project groups="minilayout,buildtools" name="chromium/tools/depot_tools" path="chromium/tools/depot_tools" remote="chromium" revision="455dc92f589da5173289bf20d4eb0ab78a790498"/>
+  <!-- Manifests are not standard projects. -->
+</manifest>
