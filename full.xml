@@ -8,22 +8,23 @@ Your sources have been sync'd successfully.
   </notice>
 
   <project path="src/repohooks" name="chromiumos/repohooks"
-           groups="minilayout,buildtools" />
+           groups="minilayout,project_sdk,buildtools" />
   <repo-hooks in-project="chromiumos/repohooks" enabled-list="pre-upload" />
 
-  <project path="chromite" name="chromiumos/chromite" groups="minilayout,buildtools" >
+  <project path="chromite" name="chromiumos/chromite"
+           groups="minilayout,project_sdk,buildtools" >
     <copyfile src="AUTHORS" dest="AUTHORS" />
     <copyfile src="LICENSE" dest="LICENSE" />
   </project>
   <project path="chromite/third_party/gdata"
-           groups="minilayout,buildtools"
+           groups="minilayout,project_sdk,buildtools"
            name="chromiumos/third_party/gdata" />
   <project path="chromite/third_party/pyelftools"
-           groups="minilayout,buildtools"
+           groups="minilayout,project_sdk,buildtools"
            name="chromiumos/third_party/pyelftools"
            revision="refs/heads/master-0.22" />
   <project path="chromite/third_party/swarming.client"
-           groups="minilayout,buildtools"
+           groups="minilayout,project_sdk,buildtools"
            name="external/swarming.client"
            revision="27f03da8d26f0be8ab26fb39847d1d456681936b"
            remote="chromium" />
@@ -44,10 +45,10 @@ Your sources have been sync'd successfully.
            name="chromiumos/third_party/coreboot/blobs" />
   <project path="src/platform/crostestutils"
            name="chromiumos/platform/crostestutils"
-           groups="minilayout,buildtools" />
+           groups="minilayout,project_sdk,buildtools" />
   <project path="src/platform/depthcharge" name="chromiumos/platform/depthcharge" />
   <project path="src/platform/dev" name="chromiumos/platform/dev-util"
-           groups="minilayout,buildtools" />
+           groups="minilayout,project_sdk,buildtools" />
   <project path="src/platform/drm-tests" name="chromiumos/platform/drm-tests" />
   <project path="src/platform/ec" name="chromiumos/platform/ec" />
   <project path="src/third_party/edk2"
@@ -194,13 +195,11 @@ Your sources have been sync'd successfully.
            name="chromiumos/third_party/tlsdate" />
   <project path="src/third_party/xf86-video-armsoc"
            name="chromiumos/third_party/xf86-video-armsoc" />
-
   <project path="src/overlays"
            name="chromiumos/overlays/board-overlays"
-           groups="minilayout" />
+           groups="minilayout,project_sdk" />
   <project path="src/scripts" name="chromiumos/platform/crosutils"
-           groups="minilayout,buildtools" />
-
+           groups="minilayout,project_sdk,buildtools" />
   <project path="src/third_party/autotest/files"
            groups="buildtools"
            name="chromiumos/third_party/autotest" />
@@ -244,19 +243,20 @@ Your sources have been sync'd successfully.
            name="chromiumos/third_party/hostap" />
   <project path="src/third_party/portage-stable"
            name="chromiumos/overlays/portage-stable"
-           groups="minilayout" />
+           groups="minilayout,project_sdk" />
   <project path="src/third_party/chromiumos-overlay" sync-c="true"
            name="chromiumos/overlays/chromiumos-overlay"
-           groups="minilayout" />
+           groups="minilayout,project_sdk" />
   <project path="src/third_party/eclass-overlay"
            name="chromiumos/overlays/eclass-overlay"
-           groups="minilayout" />
+           groups="minilayout,project_sdk" />
   <project path="src/third_party/modemmanager-next"
            name="chromiumos/third_party/modemmanager-next" />
   <project path="src/third_party/libresample"
            name="chromiumos/third_party/libresample" />
   <project path="src/third_party/rootdev"
-           name="chromiumos/third_party/rootdev" />
+           name="chromiumos/third_party/rootdev"
+           groups="project_sdk" />
   <project path="src/third_party/grub2" name="chromiumos/third_party/grub2" />
   <project path="src/third_party/dbus-c++"
            name="chromiumos/third_party/dbus-cplusplus" />
@@ -270,7 +270,7 @@ Your sources have been sync'd successfully.
            name="chromium/tools/depot_tools"
            revision="b6795643ec0305ba2ff862fcd0f450756aa5e58c"
            remote="chromium"
-           groups="minilayout,buildtools" />
+           groups="minilayout,project_sdk,buildtools" />
   <project path="chromium/src/third_party/hwcplus"
            name="chromium/src/third_party/hwcplus"
            revision="refs/heads/master" remote="chromium" />
