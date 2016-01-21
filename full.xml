@@ -135,6 +135,15 @@ Your sources have been sync'd successfully.
            name="chromiumos/third_party/bluez" />
   <project path="src/third_party/bootstub"
            name="chromiumos/third_party/bootstub" />
+  <project path="src/third_party/breakpad"
+           name="chromiumos/platform/google-breakpad"
+           revision="refs/heads/upstream/master" />
+  <!-- The lss project checked out beneath the breakpad repo is pinned to the
+       version declared in the breakpad DEPS file.  Updates to that file should
+       be reflected here by hand.  -->
+  <project path="src/third_party/breakpad/src/third_party/lss"
+           name="linux-syscall-support"
+           revision="9292030109847793f7a6689adac1ddafb412fe14" />
   <project path="src/third_party/broadcom"
            name="chromiumos/third_party/broadcom" />
   <project path="src/third_party/bsdiff"
