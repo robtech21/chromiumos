@@ -1,366 +1,180 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <include name="_remotes.xml" />
-  <default revision="refs/heads/master"
-           remote="cros" sync-j="8" />
+  <default remote="cros" revision="refs/heads/stabilize-7912.B" sync-j="8" />
   <notice>
 Your sources have been sync'd successfully.
   </notice>
 
-  <project path="src/repohooks" name="chromiumos/repohooks"
-           groups="minilayout,project_sdk,buildtools" />
-  <repo-hooks in-project="chromiumos/repohooks" enabled-list="pre-upload" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/repohooks" path="src/repohooks" />
+  <repo-hooks enabled-list="pre-upload" in-project="chromiumos/repohooks" />
 
-  <project path="chromite" name="chromiumos/chromite"
-           groups="minilayout,project_sdk,buildtools" >
-    <copyfile src="AUTHORS" dest="AUTHORS" />
-    <copyfile src="LICENSE" dest="LICENSE" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/chromite" path="chromite">
+    <copyfile dest="AUTHORS" src="AUTHORS" />
+    <copyfile dest="LICENSE" src="LICENSE" />
   </project>
-  <project path="chromite/third_party/dpkt"
-           groups="minilayout,project_sdk,buildtools"
-           name="chromiumos/third_party/dpkt"
-           revision="f5259728b1294412bee945df9708efba09ea9160">
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/third_party/dpkt" path="chromite/third_party/dpkt" revision="f5259728b1294412bee945df9708efba09ea9160">
     <annotation name="branch-mode" value="pin" />
   </project>
-  <project path="chromite/third_party/gdata"
-           groups="minilayout,project_sdk,buildtools"
-           name="chromiumos/third_party/gdata" />
-  <project path="chromite/third_party/pyelftools"
-           groups="minilayout,project_sdk,buildtools"
-           name="chromiumos/third_party/pyelftools"
-           revision="refs/heads/master-0.22" />
-  <project path="chromite/third_party/swarming.client"
-           groups="minilayout,project_sdk,buildtools"
-           name="external/swarming.client"
-           revision="715861067a7cc8d20d2d629b6d76d796c004feb4"
-           remote="chromium" />
-  <project path="src/platform2" name="chromiumos/platform2" />
-  <project path="src/platform2/glbench/images"
-           name="chromiumos/platform/glbench/images" />
-  <project path="src/platform/assets" name="chromiumos/platform/assets" />
-  <project path="src/platform/audiotest" name="chromiumos/platform/audiotest" />
-  <project path="src/platform/battery_updater"
-           name="chromiumos/platform/battery_updater" />
-  <project path="src/platform/bmpblk" name="chromiumos/platform/bmpblk" />
-  <project path="src/platform/bootcache" name="chromiumos/platform/bootcache" />
-  <project path="src/platform/btsocket" name="chromiumos/platform/btsocket" />
-  <project path="src/platform/chameleon" name="chromiumos/platform/chameleon" />
-  <project path="src/platform/chromiumos-assets"
-           name="chromiumos/platform/chromiumos-assets" />
-  <project path="src/third_party/coreboot"
-           name="chromiumos/third_party/coreboot"
-           revision="refs/heads/chromeos-2015.07" />
-  <project path="src/third_party/coreboot/3rdparty/blobs"
-           name="chromiumos/third_party/coreboot/blobs" />
-  <project path="src/platform/crostestutils"
-           name="chromiumos/platform/crostestutils"
-           groups="minilayout,project_sdk,buildtools" />
-  <project path="src/platform/depthcharge" name="chromiumos/platform/depthcharge" />
-  <project path="src/platform/dev" name="chromiumos/platform/dev-util"
-           groups="minilayout,project_sdk,buildtools" />
-  <project path="src/platform/drm-tests" name="chromiumos/platform/drm-tests" />
-  <project path="src/platform/ec" name="chromiumos/platform/ec" />
-  <project path="src/third_party/edk2"
-           name="chromiumos/third_party/edk2"
-           revision="refs/heads/chromeos-2014.04" />
-  <project path="src/platform/factory"
-           groups="project_sdk"
-           name="chromiumos/platform/factory" />
-  <project path="src/platform/factory_installer"
-           groups="project_sdk"
-           name="chromiumos/platform/factory_installer" />
-  <project path="src/platform/firmware" name="chromiumos/platform/firmware" />
-  <project path="src/platform/frecon" name="chromiumos/platform/frecon" />
-  <project path="src/platform/gestures"
-           name="chromiumos/platform/gestures" />
-  <project path="src/platform/go-seccomp" name="chromiumos/platform/go-seccomp" />
-  <project path="src/platform/initramfs" name="chromiumos/platform/initramfs" />
-  <project path="src/platform/inputcontrol" name="chromiumos/platform/inputcontrol" />
-  <project path="src/platform/jabra_vold"
-           name="chromiumos/platform/jabra_vold" />
-  <project path="src/platform/libevdev" name="chromiumos/platform/libevdev" />
-  <project path="src/platform/memento_softwareupdate"
-           name="chromiumos/platform/memento_softwareupdate" />
-  <project path="src/platform/minigbm" name="chromiumos/platform/minigbm" />
-  <project path="src/platform/microbenchmark"
-           name="chromiumos/platform/microbenchmark" />
-  <project path="src/platform/monitor_reconfig"
-           name="chromiumos/platform/monitor_reconfig" />
-  <project path="src/platform/mosys" name="chromiumos/platform/mosys" />
-  <project path="src/platform/mtpd" name="chromiumos/platform/mtpd" />
-  <project path="src/platform/mtplot" name="chromiumos/platform/mtplot" />
-  <project path="src/platform/mttools" name="chromiumos/platform/mttools" />
-  <project path="src/platform/punybench"
-           name="chromiumos/platform/punybench" />
-  <project path="src/platform/system_api"
-           name="chromiumos/platform/system_api" />
-  <project path="src/platform/touch_noise_filter"
-           name="chromiumos/platform/touch_noise_filter" />
-  <project path="src/platform/touch_updater"
-           name="chromiumos/platform/touch_updater" />
-  <project path="src/platform/touchbot" name="chromiumos/platform/touchbot" />
-  <project path="src/platform/touch_firmware_test"
-           name="chromiumos/platform/touch_firmware_test" />
-  <project path="src/platform/touchpad-tests"
-           name="chromiumos/platform/touchpad-tests" />
-  <project path="src/platform/tpm_lite" name="chromiumos/platform/tpm_lite" />
-  <project path="src/platform/trunks" name="chromiumos/platform/trunks" />
-  <project path="src/platform/uboot-env" name="chromiumos/platform/uboot-env" />
-  <project path="src/platform/verity" name="chromiumos/platform/dm-verity" />
-  <project path="src/platform/vboot_reference"
-           groups="buildtools"
-           name="chromiumos/platform/vboot_reference" />
-  <project path="src/platform/vpd" name="chromiumos/platform/vpd" />
-  <project path="src/platform/webplot" name="chromiumos/platform/webplot" />
-  <project path="src/platform/wireless_automation"
-           name="chromiumos/platform/wireless_automation" />
-  <project path="src/platform/workarounds"
-           name="chromiumos/platform/workarounds" />
-  <project path="src/platform/xf86-input-cmt"
-           name="chromiumos/platform/xf86-input-cmt" />
-  <project path="src/platform/xorg-conf"
-           name="chromiumos/platform/xorg-conf" />
-  <project path="src/third_party/adhd"
-           name="chromiumos/third_party/adhd"/>
-  <project path="src/third_party/android_mtdutils"
-           name="chromiumos/third_party/android_mtdutils"
-           revision="chromeos" />
-  <project path="src/third_party/arm-trusted-firmware"
-           name="chromiumos/third_party/arm-trusted-firmware"/>
-  <project path="src/third_party/atheros"
-           name="chromiumos/third_party/atheros" />
-  <project path="src/third_party/bluez"
-           name="chromiumos/third_party/bluez" />
-  <project path="src/third_party/bootstub"
-           name="chromiumos/third_party/bootstub" />
-  <project path="src/third_party/breakpad"
-           name="chromiumos/platform/google-breakpad" />
-  <!-- The lss project checked out beneath the breakpad repo is pinned to the
-       version declared in the breakpad DEPS file.  Updates to that file should
-       be reflected here by hand.  -->
-  <project path="src/third_party/breakpad/src/third_party/lss"
-           name="linux-syscall-support"
-           revision="9292030109847793f7a6689adac1ddafb412fe14" />
-  <project path="src/third_party/broadcom"
-           name="chromiumos/third_party/broadcom" />
-  <project path="src/third_party/cbootimage"
-           name="chromiumos/third_party/cbootimage" />
-  <project path="src/third_party/chrontel"
-           name="chromiumos/third_party/chrontel" />
-  <project path="src/third_party/cypress-tools"
-           name="chromiumos/third_party/cypress-tools" />
-  <project path="src/third_party/daisydog"
-           name="chromiumos/third_party/daisydog"/>
-  <project path="src/third_party/dbus-spy"
-           name="chromiumos/third_party/dbus-spy" />
-  <project path="src/third_party/em100" name="chromiumos/third_party/em100" />
-  <project path="src/third_party/flashmap"
-           name="chromiumos/third_party/flashmap" />
-  <project path="src/third_party/flashrom"
-           name="chromiumos/third_party/flashrom" />
-  <project path="src/third_party/gdmwimax"
-           name="chromiumos/third_party/gdmwimax" />
-  <project path="src/third_party/gobi3k-sdk"
-           name="chromiumos/third_party/gobi3k-sdk" />
-  <project path="src/third_party/hdctools"
-           name="chromiumos/third_party/hdctools" />
-  <project path="src/third_party/hwcplus-drm"
-           name="chromiumos/third_party/hwcplus-drm" />
-  <project path="src/third_party/khronos"
-           name="chromiumos/third_party/khronos" />
-  <project path="src/third_party/libdrm"
-           name="chromiumos/third_party/libdrm"
-           revision="refs/heads/chromeos-2.4.66" />
-  <project path="src/third_party/libmbim"
-           name="chromiumos/third_party/libmbim" />
-  <project path="src/third_party/libqmi"
-           name="chromiumos/third_party/libqmi" />
-  <project path="src/third_party/libscrypt"
-           name="chromiumos/third_party/libscrypt" />
-  <project path="src/third_party/libsigrok"
-           name="chromiumos/third_party/libsigrok"
-           revision="refs/heads/chromeos" />
-  <project path="src/third_party/libsigrokdecode"
-           name="chromiumos/third_party/libsigrokdecode"
-           revision="refs/heads/chromeos" />
-  <project path="src/third_party/sigrok-cli"
-           name="chromiumos/third_party/libsigrok-cli"
-           revision="refs/heads/chromeos" />
-  <project path="src/third_party/libc-bench"
-           name="chromiumos/third_party/libc-bench" />
-  <project path="src/third_party/linux-firmware"
-           name="chromiumos/third_party/linux-firmware" />
-  <project path="src/third_party/marvell"
-           name="chromiumos/third_party/marvell" />
-  <project path="src/third_party/memtest"
-           name="chromiumos/third_party/memtest" />
-  <project path="src/third_party/mesa"
-           name="chromiumos/third_party/mesa" />
-  <project path="src/third_party/mesa-img"
-           name="chromiumos/third_party/mesa"
-           revision="refs/heads/mesa-img" />
-  <project path="src/third_party/miniFakeDns"
-           name="chromiumos/third_party/minifakedns" />
-  <project path="src/third_party/mmc-utils"
-           name="chromiumos/third_party/mmc-utils" />
-  <project path="src/third_party/opencryptoki"
-           name="chromiumos/third_party/opencryptoki" />
-  <project path="src/third_party/ply-image"
-           name="chromiumos/third_party/ply-image" />
-  <project path="src/third_party/seabios"
-           name="chromiumos/third_party/seabios"
-           revision="refs/heads/chromeos-2014.11.03" />
-  <project path="src/third_party/sysbios"
-           name="chromiumos/third_party/sysbios" />
-  <project path="src/third_party/tlsdate"
-           name="chromiumos/third_party/tlsdate" />
-  <project path="src/third_party/xf86-video-armsoc"
-           name="chromiumos/third_party/xf86-video-armsoc" />
-  <project path="src/overlays"
-           name="chromiumos/overlays/board-overlays"
-           groups="minilayout,project_sdk" />
-  <project path="src/scripts" name="chromiumos/platform/crosutils"
-           groups="minilayout,project_sdk,buildtools" />
-  <project path="src/third_party/autotest/files"
-           groups="buildtools"
-           name="chromiumos/third_party/autotest" />
-  <project path="src/third_party/ibus-chewing/files"
-           name="chromiumos/third_party/ibus-chewing" />
-  <project path="src/third_party/ibus-xkb-layouts/files"
-           name="chromiumos/third_party/ibus-xkb-layouts" />
-  <project path="src/third_party/ltp"
-           name="chromiumos/third_party/ltp"
-           revision="refs/heads/chromeos-20150119" />
-  <project path="src/third_party/tegra-power-query"
-           name="chromiumos/third_party/tegra-power-query" />
-  <project path="src/third_party/tegrastats"
-           name="chromiumos/third_party/tegrastats" />
-  <project path="src/third_party/tpm" name="chromiumos/platform/tpm" />
-  <project path="src/third_party/tpm-emulator"
-           name="chromiumos/third_party/tpm-emulator" />
-  <project path="src/third_party/tpm2" name="chromiumos/third_party/tpm2" />
-  <project path="src/third_party/trousers"
-           name="chromiumos/third_party/trousers"
-           groups="project_sdk"
-           revision="refs/heads/master-0.3.13" /> <!-- See brbug.com/343 -->
-  <project path="src/third_party/kernel/v3.8"
-           name="chromiumos/third_party/kernel"
-           revision="refs/heads/chromeos-3.8" />
-  <project path="src/third_party/kernel/v3.10"
-           name="chromiumos/third_party/kernel"
-           revision="refs/heads/chromeos-3.10" />
-  <project path="src/third_party/kernel/v3.14"
-           name="chromiumos/third_party/kernel"
-           revision="refs/heads/chromeos-3.14" />
-  <project path="src/third_party/kernel/v3.18"
-           name="chromiumos/third_party/kernel"
-           revision="refs/heads/chromeos-3.18" />
-  <project path="src/third_party/gcc"
-           name="chromiumos/third_party/gcc" />
-  <project path="src/third_party/u-boot/files"
-           name="chromiumos/third_party/u-boot"
-           revision="refs/heads/chromeos-v2013.06" />
-  <project path="src/third_party/u-boot/next"
-           name="chromiumos/third_party/u-boot"
-           revision="refs/heads/chromeos-v2015.07-rc1" />
-  <project path="src/third_party/wpa_supplicant"
-           name="chromiumos/third_party/hostap" />
-  <project path="src/third_party/portage-stable"
-           name="chromiumos/overlays/portage-stable"
-           groups="minilayout,project_sdk" />
-  <project path="src/third_party/chromiumos-overlay" sync-c="true"
-           name="chromiumos/overlays/chromiumos-overlay"
-           groups="minilayout,project_sdk" />
-  <project path="src/third_party/eclass-overlay"
-           name="chromiumos/overlays/eclass-overlay"
-           groups="minilayout,project_sdk" />
-  <project path="src/third_party/modemmanager-next"
-           name="chromiumos/third_party/modemmanager-next" />
-  <project path="src/third_party/libresample"
-           name="chromiumos/third_party/libresample" />
-  <project path="src/third_party/rootdev"
-           name="chromiumos/third_party/rootdev"
-           groups="project_sdk" /> <!-- See brbug.com/345 -->
-  <project path="src/third_party/grub2" name="chromiumos/third_party/grub2" />
-  <project path="src/third_party/dbus-c++"
-           name="chromiumos/third_party/dbus-cplusplus" />
-  <project path="src/third_party/libv4lplugins" name="chromiumos/third_party/libv4lplugins" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/third_party/gdata" path="chromite/third_party/gdata" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/third_party/pyelftools" path="chromite/third_party/pyelftools" />
+  <project groups="minilayout,project_sdk,buildtools" name="external/swarming.client" path="chromite/third_party/swarming.client" remote="chromium" revision="715861067a7cc8d20d2d629b6d76d796c004feb4" />
+  <project name="chromiumos/platform2" path="src/platform2" />
+  <project name="chromiumos/platform/glbench/images" path="src/platform2/glbench/images" />
+  <project name="chromiumos/platform/assets" path="src/platform/assets" />
+  <project name="chromiumos/platform/audiotest" path="src/platform/audiotest" />
+  <project name="chromiumos/platform/battery_updater" path="src/platform/battery_updater" />
+  <project name="chromiumos/platform/bmpblk" path="src/platform/bmpblk" />
+  <project name="chromiumos/platform/bootcache" path="src/platform/bootcache" />
+  <project name="chromiumos/platform/btsocket" path="src/platform/btsocket" />
+  <project name="chromiumos/platform/chameleon" path="src/platform/chameleon" />
+  <project name="chromiumos/platform/chromiumos-assets" path="src/platform/chromiumos-assets" />
+  <project name="chromiumos/third_party/coreboot" path="src/third_party/coreboot" />
+  <project name="chromiumos/third_party/coreboot/blobs" path="src/third_party/coreboot/3rdparty/blobs" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/platform/crostestutils" path="src/platform/crostestutils" />
+  <project name="chromiumos/platform/depthcharge" path="src/platform/depthcharge" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/platform/dev-util" path="src/platform/dev" />
+  <project name="chromiumos/platform/drm-tests" path="src/platform/drm-tests" />
+  <project name="chromiumos/platform/ec" path="src/platform/ec" />
+  <project name="chromiumos/third_party/edk2" path="src/third_party/edk2" />
+  <project groups="project_sdk" name="chromiumos/platform/factory" path="src/platform/factory" />
+  <project groups="project_sdk" name="chromiumos/platform/factory_installer" path="src/platform/factory_installer" />
+  <project name="chromiumos/platform/firmware" path="src/platform/firmware" />
+  <project name="chromiumos/platform/frecon" path="src/platform/frecon" />
+  <project name="chromiumos/platform/gestures" path="src/platform/gestures" />
+  <project name="chromiumos/platform/go-seccomp" path="src/platform/go-seccomp" />
+  <project name="chromiumos/platform/initramfs" path="src/platform/initramfs" />
+  <project name="chromiumos/platform/inputcontrol" path="src/platform/inputcontrol" />
+  <project name="chromiumos/platform/jabra_vold" path="src/platform/jabra_vold" />
+  <project name="chromiumos/platform/libevdev" path="src/platform/libevdev" />
+  <project name="chromiumos/platform/memento_softwareupdate" path="src/platform/memento_softwareupdate" />
+  <project name="chromiumos/platform/minigbm" path="src/platform/minigbm" />
+  <project name="chromiumos/platform/microbenchmark" path="src/platform/microbenchmark" />
+  <project name="chromiumos/platform/monitor_reconfig" path="src/platform/monitor_reconfig" />
+  <project name="chromiumos/platform/mosys" path="src/platform/mosys" />
+  <project name="chromiumos/platform/mtpd" path="src/platform/mtpd" />
+  <project name="chromiumos/platform/mtplot" path="src/platform/mtplot" />
+  <project name="chromiumos/platform/mttools" path="src/platform/mttools" />
+  <project name="chromiumos/platform/punybench" path="src/platform/punybench" />
+  <project name="chromiumos/platform/system_api" path="src/platform/system_api" />
+  <project name="chromiumos/platform/touch_noise_filter" path="src/platform/touch_noise_filter" />
+  <project name="chromiumos/platform/touch_updater" path="src/platform/touch_updater" />
+  <project name="chromiumos/platform/touchbot" path="src/platform/touchbot" />
+  <project name="chromiumos/platform/touch_firmware_test" path="src/platform/touch_firmware_test" />
+  <project name="chromiumos/platform/touchpad-tests" path="src/platform/touchpad-tests" />
+  <project name="chromiumos/platform/tpm_lite" path="src/platform/tpm_lite" />
+  <project name="chromiumos/platform/trunks" path="src/platform/trunks" />
+  <project name="chromiumos/platform/uboot-env" path="src/platform/uboot-env" />
+  <project name="chromiumos/platform/dm-verity" path="src/platform/verity" />
+  <project groups="buildtools" name="chromiumos/platform/vboot_reference" path="src/platform/vboot_reference" />
+  <project name="chromiumos/platform/vpd" path="src/platform/vpd" />
+  <project name="chromiumos/platform/webplot" path="src/platform/webplot" />
+  <project name="chromiumos/platform/wireless_automation" path="src/platform/wireless_automation" />
+  <project name="chromiumos/platform/workarounds" path="src/platform/workarounds" />
+  <project name="chromiumos/platform/xf86-input-cmt" path="src/platform/xf86-input-cmt" />
+  <project name="chromiumos/platform/xorg-conf" path="src/platform/xorg-conf" />
+  <project name="chromiumos/third_party/adhd" path="src/third_party/adhd" />
+  <project name="chromiumos/third_party/android_mtdutils" path="src/third_party/android_mtdutils" />
+  <project name="chromiumos/third_party/arm-trusted-firmware" path="src/third_party/arm-trusted-firmware" />
+  <project name="chromiumos/third_party/atheros" path="src/third_party/atheros" />
+  <project name="chromiumos/third_party/bluez" path="src/third_party/bluez" />
+  <project name="chromiumos/third_party/bootstub" path="src/third_party/bootstub" />
+  <project name="chromiumos/platform/google-breakpad" path="src/third_party/breakpad" />
+  
+  <project name="linux-syscall-support" path="src/third_party/breakpad/src/third_party/lss" revision="9292030109847793f7a6689adac1ddafb412fe14" />
+  <project name="chromiumos/third_party/broadcom" path="src/third_party/broadcom" />
+  <project name="chromiumos/third_party/cbootimage" path="src/third_party/cbootimage" />
+  <project name="chromiumos/third_party/chrontel" path="src/third_party/chrontel" />
+  <project name="chromiumos/third_party/cypress-tools" path="src/third_party/cypress-tools" />
+  <project name="chromiumos/third_party/daisydog" path="src/third_party/daisydog" />
+  <project name="chromiumos/third_party/dbus-spy" path="src/third_party/dbus-spy" />
+  <project name="chromiumos/third_party/em100" path="src/third_party/em100" />
+  <project name="chromiumos/third_party/flashmap" path="src/third_party/flashmap" />
+  <project name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" />
+  <project name="chromiumos/third_party/gdmwimax" path="src/third_party/gdmwimax" />
+  <project name="chromiumos/third_party/gobi3k-sdk" path="src/third_party/gobi3k-sdk" />
+  <project name="chromiumos/third_party/hdctools" path="src/third_party/hdctools" />
+  <project name="chromiumos/third_party/hwcplus-drm" path="src/third_party/hwcplus-drm" />
+  <project name="chromiumos/third_party/khronos" path="src/third_party/khronos" />
+  <project name="chromiumos/third_party/libdrm" path="src/third_party/libdrm" />
+  <project name="chromiumos/third_party/libmbim" path="src/third_party/libmbim" />
+  <project name="chromiumos/third_party/libqmi" path="src/third_party/libqmi" />
+  <project name="chromiumos/third_party/libscrypt" path="src/third_party/libscrypt" />
+  <project name="chromiumos/third_party/libsigrok" path="src/third_party/libsigrok" />
+  <project name="chromiumos/third_party/libsigrokdecode" path="src/third_party/libsigrokdecode" />
+  <project name="chromiumos/third_party/libsigrok-cli" path="src/third_party/sigrok-cli" />
+  <project name="chromiumos/third_party/libc-bench" path="src/third_party/libc-bench" />
+  <project name="chromiumos/third_party/linux-firmware" path="src/third_party/linux-firmware" />
+  <project name="chromiumos/third_party/marvell" path="src/third_party/marvell" />
+  <project name="chromiumos/third_party/memtest" path="src/third_party/memtest" />
+  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="refs/heads/stabilize-7912.B-master" />
+  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-img" revision="refs/heads/stabilize-7912.B-mesa-img" />
+  <project name="chromiumos/third_party/minifakedns" path="src/third_party/miniFakeDns" />
+  <project name="chromiumos/third_party/mmc-utils" path="src/third_party/mmc-utils" />
+  <project name="chromiumos/third_party/opencryptoki" path="src/third_party/opencryptoki" />
+  <project name="chromiumos/third_party/ply-image" path="src/third_party/ply-image" />
+  <project name="chromiumos/third_party/seabios" path="src/third_party/seabios" />
+  <project name="chromiumos/third_party/sysbios" path="src/third_party/sysbios" />
+  <project name="chromiumos/third_party/tlsdate" path="src/third_party/tlsdate" />
+  <project name="chromiumos/third_party/xf86-video-armsoc" path="src/third_party/xf86-video-armsoc" />
+  <project groups="minilayout,project_sdk" name="chromiumos/overlays/board-overlays" path="src/overlays" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/platform/crosutils" path="src/scripts" />
+  <project groups="buildtools" name="chromiumos/third_party/autotest" path="src/third_party/autotest/files" />
+  <project name="chromiumos/third_party/ibus-chewing" path="src/third_party/ibus-chewing/files" />
+  <project name="chromiumos/third_party/ibus-xkb-layouts" path="src/third_party/ibus-xkb-layouts/files" />
+  <project name="chromiumos/third_party/ltp" path="src/third_party/ltp" />
+  <project name="chromiumos/third_party/tegra-power-query" path="src/third_party/tegra-power-query" />
+  <project name="chromiumos/third_party/tegrastats" path="src/third_party/tegrastats" />
+  <project name="chromiumos/platform/tpm" path="src/third_party/tpm" />
+  <project name="chromiumos/third_party/tpm-emulator" path="src/third_party/tpm-emulator" />
+  <project name="chromiumos/third_party/tpm2" path="src/third_party/tpm2" />
+  <project groups="project_sdk" name="chromiumos/third_party/trousers" path="src/third_party/trousers" /> 
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.8" revision="refs/heads/stabilize-7912.B-chromeos-3.8" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.10" revision="refs/heads/stabilize-7912.B-chromeos-3.10" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.14" revision="refs/heads/stabilize-7912.B-chromeos-3.14" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.18" revision="refs/heads/stabilize-7912.B-chromeos-3.18" />
+  <project name="chromiumos/third_party/gcc" path="src/third_party/gcc" />
+  <project name="chromiumos/third_party/u-boot" path="src/third_party/u-boot/files" revision="refs/heads/stabilize-7912.B-chromeos-v2013.06" />
+  <project name="chromiumos/third_party/u-boot" path="src/third_party/u-boot/next" revision="refs/heads/stabilize-7912.B-chromeos-v2015.07-rc1" />
+  <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant" />
+  <project groups="minilayout,project_sdk" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" />
+  <project groups="minilayout,project_sdk" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" sync-c="true" />
+  <project groups="minilayout,project_sdk" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" />
+  <project name="chromiumos/third_party/modemmanager-next" path="src/third_party/modemmanager-next" />
+  <project name="chromiumos/third_party/libresample" path="src/third_party/libresample" />
+  <project groups="project_sdk" name="chromiumos/third_party/rootdev" path="src/third_party/rootdev" /> 
+  <project name="chromiumos/third_party/grub2" path="src/third_party/grub2" />
+  <project name="chromiumos/third_party/dbus-cplusplus" path="src/third_party/dbus-c++" />
+  <project name="chromiumos/third_party/libv4lplugins" path="src/third_party/libv4lplugins" />
 
-  <!-- Chromium repositories. -->
-  <project path="chromium/tools/depot_tools"
-           name="chromium/tools/depot_tools"
-           revision="3add4b62b8fc420ba5a6cc0c8bddcf152c00a970"
-           remote="chromium"
-           groups="minilayout,project_sdk,buildtools" />
-  <project path="chromium/src/third_party/hwcplus"
-           name="chromium/src/third_party/hwcplus"
-           revision="refs/heads/master" remote="chromium" />
-  <project path="chromium/src/third_party/libmtp"
-           name="chromium/deps/libmtp"
-           revision="refs/heads/master" remote="chromium" />
+  
+  <project groups="minilayout,project_sdk,buildtools" name="chromium/tools/depot_tools" path="chromium/tools/depot_tools" remote="chromium" revision="3add4b62b8fc420ba5a6cc0c8bddcf152c00a970" />
+  <project name="chromium/src/third_party/hwcplus" path="chromium/src/third_party/hwcplus" remote="chromium" revision="e66a31e54e12906e86dc59f95b458889f025c505" />
+  <project name="chromium/deps/libmtp" path="chromium/src/third_party/libmtp" remote="chromium" revision="0680a2d0c4cec58f8163fe115de80cff8852fd8b" />
 
-  <!-- Android repositories. -->
-  <project path="src/aosp/bootable/recovery"
-           name="platform/bootable/recovery"
-           remote="aosp" />
-  <project path="src/aosp/external/bsdiff"
-           name="platform/external/bsdiff"
-           remote="aosp" />
-  <project path="src/aosp/external/dbus-binding-generator"
-           name="platform/external/dbus-binding-generator"
-           remote="aosp" />
-  <project path="src/aosp/external/libbrillo"
-           name="platform/external/libbrillo"
-           remote="aosp" />
-  <project path="src/aosp/external/libchrome"
-           name="platform/external/libchrome"
-           remote="aosp" />
-  <project path="src/aosp/external/minijail"
-           name="platform/external/minijail"
-           remote="aosp" />
-  <project path="src/aosp/system/connectivity/apmanager"
-           name="platform/system/connectivity/apmanager"
-           remote="aosp" />
-  <project path="src/aosp/system/connectivity/dhcp_client"
-           name="platform/system/connectivity/dhcp_client"
-           remote="aosp" />
-  <project path="src/aosp/system/connectivity/shill"
-           name="platform/system/connectivity/shill"
-           remote="aosp" />
-  <project path="src/aosp/system/firewalld"
-           name="platform/system/firewalld"
-           remote="aosp" />
-  <project path="src/aosp/system/tpm"
-           name="platform/system/tpm"
-           remote="aosp" />
-  <project path="src/aosp/system/update_engine"
-           name="platform/system/update_engine"
-           remote="aosp" />
-  <project path="src/aosp/system/webservd"
-           name="platform/system/webservd"
-           remote="aosp" />
-  <project path="src/aosp/toolchain/binutils"
-           name="toolchain/binutils"
-           remote="aosp" />
-  <project path="src/platform/bt"
-           name="platform/system/bt"
-           remote="aosp" />
-  <project path="src/platform/core"
-           name="platform/system/core"
-           remote="aosp" />
-  <project path="src/platform/libhardware"
-           name="platform/hardware/libhardware"
-           remote="aosp" />
-  <project path="src/third_party/modp_b64"
-           name="platform/external/modp_b64"
-           remote="aosp" />
+  
+  <project name="platform/bootable/recovery" path="src/aosp/bootable/recovery" remote="aosp" revision="c213a7c1d1eb0c6ab9bbe08c7375e8814a59a3ac" />
+  <project name="platform/external/bsdiff" path="src/aosp/external/bsdiff" remote="aosp" revision="2c1607d13402172c129d73d76a6a351e78a44328" />
+  <project name="platform/external/dbus-binding-generator" path="src/aosp/external/dbus-binding-generator" remote="aosp" revision="f07ce4ed69c3c2624f4aae422d1ed62a8ac7a44c" />
+  <project name="platform/external/libbrillo" path="src/aosp/external/libbrillo" remote="aosp" revision="922d235dca34496fd30e1b15b2bf24b4a6949288" />
+  <project name="platform/external/libchrome" path="src/aosp/external/libchrome" remote="aosp" revision="5d0701ee9dbfad58a2a4f3bc9c77cc07156eeee5" />
+  <project name="platform/external/minijail" path="src/aosp/external/minijail" remote="aosp" revision="c8b606a21be909cd74713ecce5432a924dfdaed0" />
+  <project name="platform/system/connectivity/apmanager" path="src/aosp/system/connectivity/apmanager" remote="aosp" revision="66cf1b18c0a5b62a3beb5b3a165d6ff492afb1c6" />
+  <project name="platform/system/connectivity/dhcp_client" path="src/aosp/system/connectivity/dhcp_client" remote="aosp" revision="bf76367cd82e6eac86993ce852286a7c36d755bf" />
+  <project name="platform/system/connectivity/shill" path="src/aosp/system/connectivity/shill" remote="aosp" revision="2d6213a95f4d4db396b4a402d22321f89321d303" />
+  <project name="platform/system/firewalld" path="src/aosp/system/firewalld" remote="aosp" revision="835d2c2d6f151059c4d70adbfdac9aca7b3f98c5" />
+  <project name="platform/system/tpm" path="src/aosp/system/tpm" remote="aosp" revision="d82f0e408edfb70e99cdecc7b409a4571e843505" />
+  <project name="platform/system/update_engine" path="src/aosp/system/update_engine" remote="aosp" revision="218397ff42cbef9f1b95fdfe30e8e82145ba9908" />
+  <project name="platform/system/webservd" path="src/aosp/system/webservd" remote="aosp" revision="24d0e7575edeb5433e7934de1d88bc951a02af18" />
+  <project name="toolchain/binutils" path="src/aosp/toolchain/binutils" remote="aosp" revision="c327c9c1bcffd231fcaa05f3fd8c047d1fe0afcc" />
+  <project name="platform/system/bt" path="src/platform/bt" remote="aosp" revision="6b0798a32d7a56272285cd57fe56199683df70b5" />
+  <project name="platform/system/core" path="src/platform/core" remote="aosp" revision="250f5956d69c87ab573d4593951616997c3317c0" />
+  <project name="platform/hardware/libhardware" path="src/platform/libhardware" remote="aosp" revision="087f89d4a008438dd1d0cab49c165624016a52a8" />
+  <project name="platform/external/modp_b64" path="src/third_party/modp_b64" remote="aosp" revision="ea22d9747f6dac0f3f972ce3cae96bcb4c401fc5" />
 
-  <!-- Weave repository. -->
-  <project path="src/weave/libweave"
-           name="weave/libweave"
-           remote="weave" />
+  
+  <project name="weave/libweave" path="src/weave/libweave" remote="weave" revision="f51743b22a64d38a5423edf488e6341ffc289823" />
 
-  <!-- Manifests are not standard projects. -->
-  <project path="manifest" name="chromiumos/manifest" />
+  
+  <project name="chromiumos/manifest" path="manifest" />
 
 </manifest>
