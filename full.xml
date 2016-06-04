@@ -12,7 +12,7 @@ Your sources have been sync'd successfully.
   <repo-hooks in-project="chromiumos/repohooks" enabled-list="pre-upload" />
 
   <project path="chromite" name="chromiumos/chromite"
-           groups="minilayout,project_sdk,buildtools" >
+           groups="minilayout,project_sdk,buildtools,labtools" >
     <copyfile src="AUTHORS" dest="AUTHORS" />
     <copyfile src="LICENSE" dest="LICENSE" />
   </project>
@@ -195,6 +195,7 @@ Your sources have been sync'd successfully.
   <project path="src/third_party/gobi3k-sdk"
            name="chromiumos/third_party/gobi3k-sdk" />
   <project path="src/third_party/hdctools"
+           groups="labtools"
            name="chromiumos/third_party/hdctools" />
   <project path="src/third_party/hwcplus-drm"
            name="chromiumos/third_party/hwcplus-drm" />
@@ -254,7 +255,7 @@ Your sources have been sync'd successfully.
   <project path="src/scripts" name="chromiumos/platform/crosutils"
            groups="minilayout,project_sdk,buildtools" />
   <project path="src/third_party/autotest/files"
-           groups="buildtools"
+           groups="buildtools,labtools"
            name="chromiumos/third_party/autotest" />
   <project path="src/third_party/ibus-chewing/files"
            name="chromiumos/third_party/ibus-chewing" />
@@ -307,7 +308,7 @@ Your sources have been sync'd successfully.
            groups="minilayout,project_sdk" />
   <project path="src/third_party/chromiumos-overlay" sync-c="true"
            name="chromiumos/overlays/chromiumos-overlay"
-           groups="minilayout,project_sdk" />
+           groups="minilayout,project_sdk,labtools" />
   <project path="src/third_party/eclass-overlay"
            name="chromiumos/overlays/eclass-overlay"
            groups="minilayout,project_sdk" />
