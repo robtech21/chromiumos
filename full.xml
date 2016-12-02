@@ -11,6 +11,9 @@ Your sources have been sync'd successfully.
            groups="minilayout,buildtools,labtools" />
   <repo-hooks in-project="chromiumos/repohooks" enabled-list="pre-upload" />
 
+  <project path="infra_virtualenv"
+           groups="minilayout,buildtools"
+           name="chromiumos/infra_virtualenv" />
   <project path="chromite" name="chromiumos/chromite"
            groups="minilayout,buildtools,labtools" >
     <copyfile src="AUTHORS" dest="AUTHORS" />
@@ -25,9 +28,6 @@ Your sources have been sync'd successfully.
   <project path="chromite/third_party/gdata"
            groups="minilayout,buildtools"
            name="chromiumos/third_party/gdata" />
-  <project path="chromite/virtualenv"
-           groups="minilayout,buildtools"
-           name="chromiumos/infra_virtualenv" />
   <project path="chromite/venv/pip_packages"
            groups="minilayout,buildtools"
            name="chromiumos/chromite/pip_packages" />
