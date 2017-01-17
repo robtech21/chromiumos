@@ -12,10 +12,10 @@ Your sources have been sync'd successfully.
   <repo-hooks in-project="chromiumos/repohooks" enabled-list="pre-upload" />
 
   <project path="infra_virtualenv"
-           groups="minilayout,buildtools,chromeos-admin,labtools,sysmon"
+           groups="minilayout,buildtools,chromeos-admin,labtools,sysmon,devserver"
            name="chromiumos/infra_virtualenv" />
   <project path="chromite" name="chromiumos/chromite"
-           groups="minilayout,buildtools,labtools,sysmon" >
+           groups="minilayout,buildtools,labtools,sysmon,devserver" >
     <copyfile src="AUTHORS" dest="AUTHORS" />
     <copyfile src="LICENSE" dest="LICENSE" />
   </project>
@@ -90,7 +90,7 @@ Your sources have been sync'd successfully.
            groups="minilayout,buildtools" />
   <project path="src/platform/depthcharge" name="chromiumos/platform/depthcharge" />
   <project path="src/platform/dev" name="chromiumos/platform/dev-util"
-           groups="minilayout,buildtools" />
+           groups="minilayout,buildtools,devserver" />
   <project path="src/platform/drm-tests" name="chromiumos/platform/drm-tests" />
   <project path="src/platform/ec" name="chromiumos/platform/ec" />
   <project path="src/third_party/edk2"
