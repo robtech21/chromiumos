@@ -11,6 +11,7 @@ Your sources have been sync'd successfully.
            groups="minilayout,buildtools,labtools" />
   <repo-hooks in-project="chromiumos/repohooks" enabled-list="pre-upload" />
 
+  <project path="docs" name="chromiumos/docs" />
   <project path="infra_virtualenv"
            groups="minilayout,buildtools,chromeos-admin,labtools,sysmon,devserver"
            name="chromiumos/infra_virtualenv" />
@@ -352,6 +353,12 @@ Your sources have been sync'd successfully.
   <project path="chromium/src/third_party/libmtp"
            name="chromium/deps/libmtp"
            revision="refs/heads/master" remote="chromium" />
+  <project path="chromium/src/third_party/Python-Markdown"
+           name="chromium/src/third_party/Python-Markdown"
+           remote="chromium" />
+  <project path="chromium/src/tools/md_browser"
+           name="chromium/src/tools/md_browser"
+           remote="chromium" />
 
   <!-- Android repositories. -->
   <project path="src/aosp/bootable/recovery"
