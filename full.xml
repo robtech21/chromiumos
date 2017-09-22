@@ -367,9 +367,12 @@ Your sources have been sync'd successfully.
            name="weave/libweave" />
 
   <!-- Chromium repositories. -->
+  <!-- Please keep depot_tools pin in sync with our build recipe at:
+    https://cs.chromium.org/chromium/build/scripts/slave/recipe_modules/chromite/api.py
+    -->
   <project path="chromium/tools/depot_tools"
            name="chromium/tools/depot_tools"
-           revision="5702f0baefc0c1321374d838f8fc27c18d79a2ae"
+           revision="897602abc7548572c66579246e55f3d598ee4769"
            remote="chromium"
            groups="minilayout,buildtools,labtools" />
   <project path="chromium/src/third_party/libmtp"
