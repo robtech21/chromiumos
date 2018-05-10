@@ -1,6 +1,6 @@
 <manifest>
   <include name="_remotes.xml" />
-  <default remote="cros" revision="refs/heads/firmware-fizz-10139.B" sync-j="8" />
+  <default remote="cros" revision="refs/heads/firmware-fizz-10139.117.B" sync-j="8" />
   <notice>
 Your sources have been sync'd successfully.
   </notice>
@@ -28,19 +28,19 @@ Your sources have been sync'd successfully.
   </project>
   <project groups="minilayout,firmware,buildtools" name="chromiumos/third_party/pyelftools" path="chromite/third_party/pyelftools" />
   <project groups="minilayout,firmware,buildtools,chromeos-admin" name="external/swarming.client" path="chromite/third_party/swarming.client" remote="chromium" revision="715861067a7cc8d20d2d629b6d76d796c004feb4" />
-  <project name="aosp/platform/external/dbus-binding-generator" path="src/aosp/external/dbus-binding-generator" />
-  <project name="aosp/platform/external/libbrillo" path="src/aosp/external/libbrillo" />
-  <project name="aosp/platform/external/libchrome" path="src/aosp/external/libchrome" />
+  <project name="aosp/platform/external/dbus-binding-generator" path="src/aosp/external/dbus-binding-generator" revision="7574c671c7c64aab957dc507fffff3c8c38dc7cb" />
+  <project name="aosp/platform/external/libbrillo" path="src/aosp/external/libbrillo" revision="62b7538a31c4c5a88dcd2ef4d8a60a783ec6b6f7" />
+  <project name="aosp/platform/external/libchrome" path="src/aosp/external/libchrome" revision="8263a04a1e4e6e40ed479f62ac529874eb7675ef" />
   <project name="platform/external/libmojo" path="src/aosp/external/libmojo" remote="aosp" revision="9ece443079fc9a39061f733a021133f527856ceb" />
   <project name="platform/external/minijail" path="src/aosp/external/minijail" remote="aosp" revision="431de2ea6096f3b2c8547c111edcaf85dde9715d" />
-  <project name="aosp/platform/system/connectivity/apmanager" path="src/aosp/system/connectivity/apmanager" />
-  <project name="aosp/platform/system/connectivity/shill" path="src/aosp/system/connectivity/shill" />
-  <project name="aosp/platform/system/firewalld" path="src/aosp/system/firewalld" />
-  <project name="aosp/platform/system/core/libsync" path="src/aosp/system/libsync" />
-  <project name="aosp/platform/system/tpm" path="src/aosp/system/tpm" />
-  <project groups="devserver" name="aosp/platform/system/update_engine" path="src/aosp/system/update_engine" />
-  <project name="aosp/platform/system/webservd" path="src/aosp/system/webservd" />
-  <project name="aosp/platform/external/modp_b64" path="src/third_party/modp_b64" />
+  <project name="aosp/platform/system/connectivity/apmanager" path="src/aosp/system/connectivity/apmanager" revision="5f43fb626cf8bba55580bc8781beb6234444366c" />
+  <project name="aosp/platform/system/connectivity/shill" path="src/aosp/system/connectivity/shill" revision="2186af3cc6680430c9993a5a488a91cc53407a62" />
+  <project name="aosp/platform/system/firewalld" path="src/aosp/system/firewalld" revision="64fc5a23a1ae487409cc585b3fbf261c553acb4e" />
+  <project name="aosp/platform/system/core/libsync" path="src/aosp/system/libsync" revision="f4f4387b6bf2387efbcfd1453af4892e8982faf6" />
+  <project name="aosp/platform/system/tpm" path="src/aosp/system/tpm" revision="38a7897b6f80bc4eee68ddfba499fec95218e217" />
+  <project groups="devserver" name="aosp/platform/system/update_engine" path="src/aosp/system/update_engine" revision="02855c25944b8d64e569e9e8051be514acf40438" />
+  <project name="aosp/platform/system/webservd" path="src/aosp/system/webservd" revision="62ca9ee8ca421cb565fd4a05390f455c5fcefd17" />
+  <project name="aosp/platform/external/modp_b64" path="src/third_party/modp_b64" revision="99dc13926931cedfd2e4e582c33ef657d0645c5c" />
   <project name="chromiumos/platform2" path="src/platform2" />
   <project name="chromiumos/platform/experimental" path="src/platform/experimental" />
   <project name="chromiumos/platform/arc-camera" path="src/platform/arc-camera" />
@@ -103,7 +103,7 @@ Your sources have been sync'd successfully.
   <project name="chromiumos/platform/xorg-conf" path="src/platform/xorg-conf" />
   <project name="chromiumos/third_party/adhd" path="src/third_party/adhd" />
   <project name="chromiumos/third_party/android_mtdutils" path="src/third_party/android_mtdutils" />
-  <project name="chromiumos/third_party/mesa" path="src/third_party/arc-mesa" revision="refs/heads/firmware-fizz-10139.B-arc-17.2.0-pre1" />
+  <project name="chromiumos/third_party/mesa" path="src/third_party/arc-mesa" revision="refs/heads/firmware-fizz-10139.117.B-arc-17.2.0-pre1" />
   <project name="chromiumos/third_party/arm-trusted-firmware" path="src/third_party/arm-trusted-firmware" />
   <project name="chromiumos/third_party/atheros" path="src/third_party/atheros" />
   <project name="chromiumos/third_party/atrusctl" path="src/third_party/atrusctl" />
@@ -141,8 +141,8 @@ Your sources have been sync'd successfully.
   <project name="chromiumos/third_party/logitech-updater" path="src/third_party/logitech-updater" />
   <project name="chromiumos/third_party/marvell" path="src/third_party/marvell" />
   <project name="chromiumos/third_party/memtest" path="src/third_party/memtest" />
-  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="refs/heads/firmware-fizz-10139.B-master" />
-  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-img" revision="refs/heads/firmware-fizz-10139.B-mesa-img" />
+  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="refs/heads/firmware-fizz-10139.117.B-master" />
+  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-img" revision="refs/heads/firmware-fizz-10139.117.B-mesa-img" />
   <project name="chromiumos/third_party/mimo-updater" path="src/third_party/mimo-updater" />
   <project name="chromiumos/third_party/minifakedns" path="src/third_party/miniFakeDns" />
   <project name="chromiumos/third_party/mmc-utils" path="src/third_party/mmc-utils" />
@@ -162,18 +162,18 @@ Your sources have been sync'd successfully.
   <project groups="firmware" name="chromiumos/third_party/tpm2" path="src/third_party/tpm2" />
   <project name="chromiumos/third_party/cryptoc" path="src/third_party/cryptoc" />
   <project name="chromiumos/third_party/trousers" path="src/third_party/trousers" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.8" revision="refs/heads/firmware-fizz-10139.B-chromeos-3.8" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.10" revision="refs/heads/firmware-fizz-10139.B-chromeos-3.10" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.14" revision="refs/heads/firmware-fizz-10139.B-chromeos-3.14" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.18" revision="refs/heads/firmware-fizz-10139.B-chromeos-3.18" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.4" revision="refs/heads/firmware-fizz-10139.B-chromeos-4.4" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.12" revision="refs/heads/firmware-fizz-10139.B-chromeos-4.12" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/experimental" revision="refs/heads/firmware-fizz-10139.B-next/chromeos-experimental" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.8" revision="refs/heads/firmware-fizz-10139.117.B-chromeos-3.8" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.10" revision="refs/heads/firmware-fizz-10139.117.B-chromeos-3.10" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.14" revision="refs/heads/firmware-fizz-10139.117.B-chromeos-3.14" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.18" revision="refs/heads/firmware-fizz-10139.117.B-chromeos-3.18" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.4" revision="refs/heads/firmware-fizz-10139.117.B-chromeos-4.4" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.12" revision="refs/heads/firmware-fizz-10139.117.B-chromeos-4.12" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/experimental" revision="refs/heads/firmware-fizz-10139.117.B-next/chromeos-experimental" />
   <project name="chromiumos/third_party/gcc" path="src/third_party/gcc" />
-  <project name="chromiumos/third_party/u-boot" path="src/third_party/u-boot/files" revision="refs/heads/firmware-fizz-10139.B-chromeos-v2017.05" />
-  <project name="chromiumos/third_party/u-boot" path="src/third_party/u-boot/next" revision="refs/heads/firmware-fizz-10139.B-chromeos-v2015.07-rc1" />
-  <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant" revision="refs/heads/firmware-fizz-10139.B-master" />
-  <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant-2.6" revision="refs/heads/firmware-fizz-10139.B-wpa_supplicant-2.6" />
+  <project name="chromiumos/third_party/u-boot" path="src/third_party/u-boot/files" revision="refs/heads/firmware-fizz-10139.117.B-chromeos-v2017.05" />
+  <project name="chromiumos/third_party/u-boot" path="src/third_party/u-boot/next" revision="refs/heads/firmware-fizz-10139.117.B-chromeos-v2015.07-rc1" />
+  <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant" revision="refs/heads/firmware-fizz-10139.117.B-master" />
+  <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant-2.6" revision="refs/heads/firmware-fizz-10139.117.B-wpa_supplicant-2.6" />
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" />
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" sync-c="true" />
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" />
