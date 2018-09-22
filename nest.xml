@@ -1,0 +1,70 @@
+<manifest>
+  <include name="_remotes.xml" />
+
+  <project name="platform/build-linux" path="src/platform/nest/build" remote="nest-internal" revision="feature/nest-on-cros" >
+    <linkfile src="make/root.mak" dest="src/platform/nest/Makefile"/>
+  </project>
+
+  <project name="build-cros" path="src/platform/nest/sw" remote="nest-internal" revision="feature/nest-on-cros">
+    <linkfile src="products.mak" dest="src/platform/nest/products/sw-list.mak"/>
+    <linkfile src="gale.mak" dest="src/platform/nest/products/gale.mak"/>
+    <linkfile src="paths.mak" dest="src/platform/nest/paths/sw.mak"/>
+  </project>
+
+  <project name="platform/nlapplibs" path="src/platform/nest/sw/nestlabs/lib/nlapplibs" remote="nest-internal" revision="master" />
+
+  <project name="platform/nlbluez" path="src/platform/nest/sw/nestlabs/lib/nlbluez" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="platform/nlbleservice" path="src/platform/nest/sw/nestlabs/lib/nlbleservice" remote="nest-internal" revision="master" />
+
+  <project name="platform/nlcalibration" path="src/platform/nest/sw/nestlabs/lib/nlcalibration" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="platform/nldbus" path="src/platform/nest/sw/nestlabs/lib/nldbus" remote="nest-internal" revision="master" />
+
+  <project name="platform/networkmanager-linux" path="src/platform/nest/sw/nestlabs/lib/nlnetworkmanager" remote="nest-internal" revision="master" />
+
+  <project name="platform/nlnetworkmanagement" path="src/platform/nest/sw/nestlabs/lib/nlnetworkmanagement" remote="nest-internal" revision="master" />
+
+  <project name="platform/nlnetworktools" path="src/platform/nest/sw/nestlabs/lib/nlnetworktools" remote="nest-internal" revision="master" />
+
+  <project name="platform/nlsignalhandler" path="src/platform/nest/sw/nestlabs/lib/nlsignalhandler" remote="nest-internal" revision="master" />
+
+  <project name="platform/nlweavetools" path="src/platform/nest/sw/nestlabs/lib/nlweavetools" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="platform/nlwirelesscal" path="src/platform/nest/sw/nestlabs/lib/nlwirelesscal" remote="nest-internal" revision="master" />
+
+  <project name="platform/nlwirelessreg" path="src/platform/nest/sw/nestlabs/lib/nlwirelessreg" remote="nest-internal" revision="master" />
+
+  <project name="platform/integration" path="src/platform/nest/sw/nestlabs/lib/Integration" remote="nest-internal" revision="master" />
+
+  <project name="platform/nuovations" path="src/platform/nest/sw/nestlabs/lib/Nuovations" remote="nest-internal" revision="master" />
+
+  <project name="platform/pathobserver" path="src/platform/nest/sw/nestlabs/lib/PathObserver" remote="nest-internal" revision="master" />
+
+  <project name="platform/osm-linux" path="src/platform/nest/sw/nestlabs/osm" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="platform/weave" path="src/platform/nest/sw/nestlabs/weave/repo" remote="nest-internal" revision="master" />
+
+  <project name="platform/integrity" path="src/platform/nest/sw/nestlabs/lib/Integrity" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="tps/wpantund" path="src/platform/nest/sw/nestlabs/wpantund/repo" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="platform/nldaemon" path="src/platform/nest/sw/nestlabs/nldaemon" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="platform/connman-nest" path="src/platform/nest/sw/tps/connman/connman/" remote="nest-internal" revision="master" />
+
+  <project name="tps/bluez" path="src/platform/nest/sw/tps/bluez/repo" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="tps/opencflite" path="src/platform/nest/sw/tps/opencflite" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="tps/nspr" path="src/platform/nest/sw/tps/nspr" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="tps/boost" path="src/platform/nest/sw/tps/boost" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="tps/tz" path="src/platform/nest/sw/tps/tz" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="tps/mjson" path="src/platform/nest/sw/tps/mjson" remote="nest-internal" revision="feature/nest-on-cros" />
+
+  <project name="tps/openssl" path="src/platform/nest/sw/tps/openssl" remote="nest-internal" revision="feature/nest-on-cros" />
+
+</manifest>
