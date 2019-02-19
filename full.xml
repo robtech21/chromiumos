@@ -403,7 +403,10 @@ Your sources have been sync'd successfully.
   <project path="src/weave/libweave"
            name="weave/libweave" />
 
-  <!-- Chromium repositories. -->
+  <!-- Chromium repositories.
+    We try to check out repos under src/chromium/ using the same layout as a
+    Chromium checkout.  e.g. src.git would be at src/chromium/src/.
+    -->
   <!-- Please keep depot_tools pin in sync with our build recipe at:
     https://cs.chromium.org/chromium/build/scripts/slave/recipe_modules/chromite/api.py
     -->
@@ -415,6 +418,10 @@ Your sources have been sync'd successfully.
   <project path="chromium/src/buildtools"
            name="chromium/buildtools"
            revision="6fbda1b24c1893a893b17aa219b765b9e7c801d8"
+           remote="chromium"
+           groups="minilayout,buildtools,labtools" />
+  <project path="src/chromium/src/buildtools"
+           name="chromium/src/buildtools"
            remote="chromium"
            groups="minilayout,buildtools,labtools" />
   <project path="chromium/src/buildtools/clang_format/script"
