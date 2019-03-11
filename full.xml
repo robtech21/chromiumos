@@ -20,6 +20,11 @@ Your sources have been sync'd successfully.
     <copyfile src="AUTHORS" dest="AUTHORS" />
     <copyfile src="LICENSE" dest="LICENSE" />
   </project>
+  <!--The chromite proto needs to be regenerated whenever this revision is changed!-->
+  <!--The chromite/api/compile_build_api_proto script is used to do so.-->
+  <project path="chromite/infra/proto"
+           name="chromiumos/infra/proto"
+           revision="358439535a4e76100c818ebcfc8c238a943c7f51" />
   <project path="infra/bad_cl_detector"
            name="chromiumos/infra/bad_cl_detector" />
   <project path="infra/dummies/general-sandbox"
