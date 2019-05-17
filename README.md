@@ -2,6 +2,8 @@
 **IMPORTANT**: Changes to this repo must also be made in the private manfest
 repo <https://chrome-internal.googlesource.com/chromeos/manifest-internal>.
 Automated sync between manifest-internal and manifest is not yet set up.
+And, the changes must *also* be synced to the infra/config file
+chromeos_repos.star. Without this, the repo will never be picked up by CQ.
 ***
 
 # Repo Groups
