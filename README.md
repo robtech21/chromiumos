@@ -9,14 +9,14 @@ chromeos\_repos.star. Without this, the repo will never be picked up by CQ.
 # Repo Groups
 Repo is the tool that we use to manage our local checkouts. It parses the
 manifest specified by the `default.xml` file. The name of the manifest can be
-ovverriden using `-m`. One could also check out a subset of the manifest using
+overridden using `-m`. One could also check out a subset of the manifest using
 the repo `groups` feature. This section documents the important groups that are
 part of the default chromiumos manifest.
 
 ## minilayout
 This group is the minimum subset of repos needed to do a full build of Chrome
 OS. It doesn't include all of the repos to necessarily test the OS image but
-does include all those needed to create an iamge.
+does include all those needed to create an image.
 
 ## buildtools
 The subset of repos needed to perform release actions i.e. payload generation,
