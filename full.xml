@@ -1,151 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <manifest>
   <include name="_remotes.xml" />
-  <default remote="cros" revision="refs/heads/firmware-strago-7287.B" sync-j="8" />
+  <default remote="cros" sync-j="8" />
   <notice>
 Your sources have been sync'd successfully.
   </notice>
 
-  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/repohooks" path="src/repohooks" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/repohooks" path="src/repohooks" revision="refs/heads/firmware-setzer-7287.360.B" />
   <repo-hooks enabled-list="pre-upload" in-project="chromiumos/repohooks" />
 
-  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/chromite" path="chromite">
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/chromite" path="chromite" revision="refs/heads/firmware-setzer-7287.360.B">
     <copyfile dest="AUTHORS" src="AUTHORS" />
     <copyfile dest="LICENSE" src="LICENSE" />
   </project>
   <project groups="minilayout,project_sdk,buildtools" name="chromiumos/third_party/dpkt" path="chromite/third_party/dpkt" revision="f5259728b1294412bee945df9708efba09ea9160">
     <annotation name="branch-mode" value="pin" />
   </project>
-  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/third_party/gdata" path="chromite/third_party/gdata" />
-  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/third_party/pyelftools" path="chromite/third_party/pyelftools" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/third_party/gdata" path="chromite/third_party/gdata" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/third_party/pyelftools" path="chromite/third_party/pyelftools" revision="refs/heads/firmware-setzer-7287.360.B" />
   <project groups="minilayout,project_sdk,buildtools" name="external/swarming.client" path="chromite/third_party/swarming.client" remote="chromium" revision="27f03da8d26f0be8ab26fb39847d1d456681936b" />
-  <project name="chromiumos/platform2" path="src/platform2" />
-  <project name="chromiumos/platform/glbench/images" path="src/platform2/glbench/images" />
-  <project name="chromiumos/platform/assets" path="src/platform/assets" />
-  <project name="chromiumos/platform/audiotest" path="src/platform/audiotest" />
-  <project name="chromiumos/platform/battery_updater" path="src/platform/battery_updater" />
-  <project name="chromiumos/platform/bootcache" path="src/platform/bootcache" />
-  <project name="chromiumos/platform/btsocket" path="src/platform/btsocket" />
-  <project name="chromiumos/platform/chameleon" path="src/platform/chameleon" />
-  <project name="chromiumos/platform/chromiumos-assets" path="src/platform/chromiumos-assets" />
-  <project name="chromiumos/third_party/coreboot" path="src/third_party/coreboot" />
-  <project name="chromiumos/third_party/coreboot/blobs" path="src/third_party/coreboot/3rdparty/blobs" />
-  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/platform/crostestutils" path="src/platform/crostestutils" />
-  <project name="chromiumos/platform/depthcharge" path="src/platform/depthcharge" />
-  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/platform/dev-util" path="src/platform/dev" />
-  <project name="chromiumos/platform/drm-tests" path="src/platform/drm-tests" />
-  <project name="chromiumos/platform/ec" path="src/platform/ec" />
-  <project name="chromiumos/third_party/edk2" path="src/third_party/edk2" />
-  <project groups="project_sdk" name="chromiumos/platform/factory" path="src/platform/factory" />
-  <project groups="project_sdk" name="chromiumos/platform/factory_installer" path="src/platform/factory_installer" />
-  <project name="chromiumos/platform/firmware" path="src/platform/firmware" />
-  <project name="chromiumos/platform/frecon" path="src/platform/frecon" />
-  <project name="chromiumos/platform/gestures" path="src/platform/gestures" />
-  <project name="chromiumos/platform/go-seccomp" path="src/platform/go-seccomp" />
-  <project name="chromiumos/platform/google-breakpad" path="src/platform/google-breakpad" />
-  <project name="chromiumos/platform/initramfs" path="src/platform/initramfs" />
-  <project name="chromiumos/platform/inputcontrol" path="src/platform/inputcontrol" />
-  <project name="chromiumos/platform/jabra_vold" path="src/platform/jabra_vold" />
-  <project name="chromiumos/platform/libevdev" path="src/platform/libevdev" />
-  <project name="chromiumos/platform/memento_softwareupdate" path="src/platform/memento_softwareupdate" />
-  <project name="chromiumos/platform/minigbm" path="src/platform/minigbm" />
-  <project name="chromiumos/platform/microbenchmark" path="src/platform/microbenchmark" />
-  <project name="chromiumos/platform/monitor_reconfig" path="src/platform/monitor_reconfig" />
-  <project name="chromiumos/platform/mosys" path="src/platform/mosys" />
-  <project name="chromiumos/platform/mtpd" path="src/platform/mtpd" />
-  <project name="chromiumos/platform/mtplot" path="src/platform/mtplot" />
-  <project name="chromiumos/platform/mttools" path="src/platform/mttools" />
-  <project name="chromiumos/platform/punybench" path="src/platform/punybench" />
-  <project name="chromiumos/platform/system_api" path="src/platform/system_api" />
-  <project name="chromiumos/platform/touch_noise_filter" path="src/platform/touch_noise_filter" />
-  <project name="chromiumos/platform/touch_updater" path="src/platform/touch_updater" />
-  <project name="chromiumos/platform/touchbot" path="src/platform/touchbot" />
-  <project name="chromiumos/platform/touch_firmware_test" path="src/platform/touch_firmware_test" />
-  <project name="chromiumos/platform/touchpad-tests" path="src/platform/touchpad-tests" />
-  <project name="chromiumos/platform/tpm_lite" path="src/platform/tpm_lite" />
-  <project name="chromiumos/platform/trunks" path="src/platform/trunks" />
-  <project name="chromiumos/platform/uboot-env" path="src/platform/uboot-env" />
-  <project name="chromiumos/platform/dm-verity" path="src/platform/verity" />
-  <project groups="buildtools" name="chromiumos/platform/vboot_reference" path="src/platform/vboot_reference" />
-  <project name="chromiumos/platform/vpd" path="src/platform/vpd" />
-  <project name="chromiumos/platform/webplot" path="src/platform/webplot" />
-  <project name="chromiumos/platform/wireless_automation" path="src/platform/wireless_automation" />
-  <project name="chromiumos/platform/workarounds" path="src/platform/workarounds" />
-  <project name="chromiumos/platform/xf86-input-cmt" path="src/platform/xf86-input-cmt" />
-  <project name="chromiumos/platform/xorg-conf" path="src/platform/xorg-conf" />
-  <project name="chromiumos/third_party/adhd" path="src/third_party/adhd" />
-  <project name="chromiumos/third_party/android_mtdutils" path="src/third_party/android_mtdutils" />
-  <project name="chromiumos/third_party/arm-trusted-firmware" path="src/third_party/arm-trusted-firmware" />
-  <project name="chromiumos/third_party/atheros" path="src/third_party/atheros" />
-  <project name="chromiumos/third_party/bluez" path="src/third_party/bluez" />
-  <project name="chromiumos/third_party/bootstub" path="src/third_party/bootstub" />
-  <project name="chromiumos/third_party/broadcom" path="src/third_party/broadcom" />
-  <project name="chromiumos/third_party/bsdiff" path="src/third_party/bsdiff" />
-  <project name="chromiumos/third_party/cbootimage" path="src/third_party/cbootimage" />
-  <project name="chromiumos/third_party/chrontel" path="src/third_party/chrontel" />
-  <project name="chromiumos/third_party/cypress-tools" path="src/third_party/cypress-tools" />
-  <project name="chromiumos/third_party/daisydog" path="src/third_party/daisydog" />
-  <project name="chromiumos/third_party/dbus-spy" path="src/third_party/dbus-spy" />
-  <project name="chromiumos/third_party/dhcpcd" path="src/third_party/dhcpcd" />
-  <project name="chromiumos/third_party/em100" path="src/third_party/em100" />
-  <project name="chromiumos/third_party/flashmap" path="src/third_party/flashmap" />
-  <project name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" />
-  <project name="chromiumos/third_party/gdmwimax" path="src/third_party/gdmwimax" />
-  <project name="chromiumos/third_party/gobi3k-sdk" path="src/third_party/gobi3k-sdk" />
-  <project name="chromiumos/third_party/hdctools" path="src/third_party/hdctools" />
-  <project name="chromiumos/third_party/hwcplus-drm" path="src/third_party/hwcplus-drm" />
-  <project name="chromiumos/third_party/khronos" path="src/third_party/khronos" />
-  <project name="chromiumos/third_party/libmbim" path="src/third_party/libmbim" />
-  <project name="chromiumos/third_party/libqmi" path="src/third_party/libqmi" />
-  <project name="chromiumos/third_party/libscrypt" path="src/third_party/libscrypt" />
-  <project name="chromiumos/third_party/libsigrok" path="src/third_party/libsigrok" />
-  <project name="chromiumos/third_party/libsigrokdecode" path="src/third_party/libsigrokdecode" />
-  <project name="chromiumos/third_party/libsigrok-cli" path="src/third_party/sigrok-cli" />
-  <project name="chromiumos/third_party/libc-bench" path="src/third_party/libc-bench" />
-  <project name="chromiumos/third_party/linux-firmware" path="src/third_party/linux-firmware" />
-  <project name="chromiumos/third_party/marvell" path="src/third_party/marvell" />
-  <project name="chromiumos/third_party/memtest" path="src/third_party/memtest" />
-  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="refs/heads/firmware-strago-7287.B-master" />
-  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-img" revision="refs/heads/firmware-strago-7287.B-mesa-img" />
-  <project name="chromiumos/third_party/minifakedns" path="src/third_party/miniFakeDns" />
-  <project name="chromiumos/third_party/mmc-utils" path="src/third_party/mmc-utils" />
-  <project name="chromiumos/third_party/opencryptoki" path="src/third_party/opencryptoki" />
-  <project name="chromiumos/third_party/ply-image" path="src/third_party/ply-image" />
-  <project name="chromiumos/third_party/seabios" path="src/third_party/seabios" />
-  <project name="chromiumos/third_party/sysbios" path="src/third_party/sysbios" />
-  <project name="chromiumos/third_party/tlsdate" path="src/third_party/tlsdate" />
-  <project name="chromiumos/third_party/xf86-video-armsoc" path="src/third_party/xf86-video-armsoc" />
-  <project groups="minilayout,project_sdk" name="chromiumos/overlays/board-overlays" path="src/overlays" />
-  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/platform/crosutils" path="src/scripts" />
-  <project groups="buildtools" name="chromiumos/third_party/autotest" path="src/third_party/autotest/files" />
-  <project name="chromiumos/third_party/ibus-chewing" path="src/third_party/ibus-chewing/files" />
-  <project name="chromiumos/third_party/ibus-xkb-layouts" path="src/third_party/ibus-xkb-layouts/files" />
-  <project name="chromiumos/third_party/ltp" path="src/third_party/ltp" />
-  <project name="chromiumos/third_party/tegra-power-query" path="src/third_party/tegra-power-query" />
-  <project name="chromiumos/third_party/tegrastats" path="src/third_party/tegrastats" />
-  <project name="chromiumos/platform/tpm" path="src/third_party/tpm" />
-  <project name="chromiumos/third_party/tpm-emulator" path="src/third_party/tpm-emulator" />
-  <project name="chromiumos/third_party/tpm2" path="src/third_party/tpm2" />
-  <project groups="project_sdk" name="chromiumos/third_party/trousers" path="src/third_party/trousers" /> 
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.4" revision="refs/heads/firmware-strago-7287.B-chromeos-3.4" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.8" revision="refs/heads/firmware-strago-7287.B-chromeos-3.8" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.10" revision="refs/heads/firmware-strago-7287.B-chromeos-3.10" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.14" revision="refs/heads/firmware-strago-7287.B-chromeos-3.14" />
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.18" revision="refs/heads/firmware-strago-7287.B-chromeos-3.18" />
-  <project name="chromiumos/third_party/kernel-next" path="src/third_party/kernel/v3.18-experiment" />
-  <project name="chromiumos/third_party/gcc" path="src/third_party/gcc" />
-  <project name="chromiumos/third_party/binutils" path="src/third_party/binutils" />
-  <project name="chromiumos/third_party/u-boot" path="src/third_party/u-boot/files" revision="refs/heads/firmware-strago-7287.B-chromeos-v2013.06" />
-  <project name="chromiumos/third_party/u-boot" path="src/third_party/u-boot/next" revision="refs/heads/firmware-strago-7287.B-chromeos-v2015.07-rc1" />
-  <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant" />
-  <project groups="minilayout,project_sdk" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" />
-  <project groups="minilayout,project_sdk" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" sync-c="true" />
-  <project groups="minilayout,project_sdk" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" />
-  <project name="chromiumos/third_party/modemmanager-next" path="src/third_party/modemmanager-next" />
-  <project name="chromiumos/third_party/libresample" path="src/third_party/libresample" />
-  <project groups="project_sdk" name="chromiumos/third_party/rootdev" path="src/third_party/rootdev" /> 
-  <project name="chromiumos/third_party/grub2" path="src/third_party/grub2" />
-  <project name="chromiumos/third_party/dbus-cplusplus" path="src/third_party/dbus-c++" />
-  <project name="chromiumos/third_party/libv4lplugins" path="src/third_party/libv4lplugins" />
+  <project name="chromiumos/platform2" path="src/platform2" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/glbench/images" path="src/platform2/glbench/images" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/assets" path="src/platform/assets" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/audiotest" path="src/platform/audiotest" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/battery_updater" path="src/platform/battery_updater" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/bootcache" path="src/platform/bootcache" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/btsocket" path="src/platform/btsocket" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/chameleon" path="src/platform/chameleon" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/chromiumos-assets" path="src/platform/chromiumos-assets" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/coreboot" path="src/third_party/coreboot" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/coreboot/blobs" path="src/third_party/coreboot/3rdparty/blobs" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/platform/crostestutils" path="src/platform/crostestutils" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/depthcharge" path="src/platform/depthcharge" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/platform/dev-util" path="src/platform/dev" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/drm-tests" path="src/platform/drm-tests" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/ec" path="src/platform/ec" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/edk2" path="src/third_party/edk2" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="project_sdk" name="chromiumos/platform/factory" path="src/platform/factory" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="project_sdk" name="chromiumos/platform/factory_installer" path="src/platform/factory_installer" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/firmware" path="src/platform/firmware" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/frecon" path="src/platform/frecon" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/gestures" path="src/platform/gestures" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/go-seccomp" path="src/platform/go-seccomp" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/google-breakpad" path="src/platform/google-breakpad" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/initramfs" path="src/platform/initramfs" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/inputcontrol" path="src/platform/inputcontrol" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/jabra_vold" path="src/platform/jabra_vold" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/libevdev" path="src/platform/libevdev" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/memento_softwareupdate" path="src/platform/memento_softwareupdate" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/minigbm" path="src/platform/minigbm" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/microbenchmark" path="src/platform/microbenchmark" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/monitor_reconfig" path="src/platform/monitor_reconfig" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/mosys" path="src/platform/mosys" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/mtpd" path="src/platform/mtpd" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/mtplot" path="src/platform/mtplot" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/mttools" path="src/platform/mttools" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/punybench" path="src/platform/punybench" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/system_api" path="src/platform/system_api" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/touch_noise_filter" path="src/platform/touch_noise_filter" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/touch_updater" path="src/platform/touch_updater" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/touchbot" path="src/platform/touchbot" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/touch_firmware_test" path="src/platform/touch_firmware_test" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/touchpad-tests" path="src/platform/touchpad-tests" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/tpm_lite" path="src/platform/tpm_lite" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/trunks" path="src/platform/trunks" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/uboot-env" path="src/platform/uboot-env" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/dm-verity" path="src/platform/verity" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="buildtools" name="chromiumos/platform/vboot_reference" path="src/platform/vboot_reference" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/vpd" path="src/platform/vpd" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/webplot" path="src/platform/webplot" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/wireless_automation" path="src/platform/wireless_automation" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/workarounds" path="src/platform/workarounds" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/xf86-input-cmt" path="src/platform/xf86-input-cmt" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/xorg-conf" path="src/platform/xorg-conf" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/adhd" path="src/third_party/adhd" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/android_mtdutils" path="src/third_party/android_mtdutils" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/arm-trusted-firmware" path="src/third_party/arm-trusted-firmware" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/atheros" path="src/third_party/atheros" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/bluez" path="src/third_party/bluez" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/bootstub" path="src/third_party/bootstub" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/broadcom" path="src/third_party/broadcom" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/bsdiff" path="src/third_party/bsdiff" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/cbootimage" path="src/third_party/cbootimage" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/chrontel" path="src/third_party/chrontel" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/cypress-tools" path="src/third_party/cypress-tools" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/daisydog" path="src/third_party/daisydog" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/dbus-spy" path="src/third_party/dbus-spy" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/dhcpcd" path="src/third_party/dhcpcd" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/em100" path="src/third_party/em100" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/flashmap" path="src/third_party/flashmap" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/gdmwimax" path="src/third_party/gdmwimax" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/gobi3k-sdk" path="src/third_party/gobi3k-sdk" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/hdctools" path="src/third_party/hdctools" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/hwcplus-drm" path="src/third_party/hwcplus-drm" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/khronos" path="src/third_party/khronos" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/libmbim" path="src/third_party/libmbim" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/libqmi" path="src/third_party/libqmi" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/libscrypt" path="src/third_party/libscrypt" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/libsigrok" path="src/third_party/libsigrok" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/libsigrokdecode" path="src/third_party/libsigrokdecode" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/libsigrok-cli" path="src/third_party/sigrok-cli" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/libc-bench" path="src/third_party/libc-bench" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/linux-firmware" path="src/third_party/linux-firmware" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/marvell" path="src/third_party/marvell" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/memtest" path="src/third_party/memtest" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="refs/heads/firmware-setzer-7287.360.B-firmware-strago-7287.B-master" />
+  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-img" revision="refs/heads/firmware-setzer-7287.360.B-firmware-strago-7287.B-mesa-img" />
+  <project name="chromiumos/third_party/minifakedns" path="src/third_party/miniFakeDns" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/mmc-utils" path="src/third_party/mmc-utils" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/opencryptoki" path="src/third_party/opencryptoki" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/ply-image" path="src/third_party/ply-image" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/seabios" path="src/third_party/seabios" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/sysbios" path="src/third_party/sysbios" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/tlsdate" path="src/third_party/tlsdate" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/xf86-video-armsoc" path="src/third_party/xf86-video-armsoc" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="minilayout,project_sdk" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="minilayout,project_sdk,buildtools" name="chromiumos/platform/crosutils" path="src/scripts" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="buildtools" name="chromiumos/third_party/autotest" path="src/third_party/autotest/files" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/ibus-chewing" path="src/third_party/ibus-chewing/files" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/ibus-xkb-layouts" path="src/third_party/ibus-xkb-layouts/files" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/ltp" path="src/third_party/ltp" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/tegra-power-query" path="src/third_party/tegra-power-query" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/tegrastats" path="src/third_party/tegrastats" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/platform/tpm" path="src/third_party/tpm" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/tpm-emulator" path="src/third_party/tpm-emulator" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/tpm2" path="src/third_party/tpm2" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="project_sdk" name="chromiumos/third_party/trousers" path="src/third_party/trousers" revision="refs/heads/firmware-setzer-7287.360.B" /> 
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.4" revision="refs/heads/firmware-setzer-7287.360.B-firmware-strago-7287.B-chromeos-3.4" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.8" revision="refs/heads/firmware-setzer-7287.360.B-firmware-strago-7287.B-chromeos-3.8" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.10" revision="refs/heads/firmware-setzer-7287.360.B-firmware-strago-7287.B-chromeos-3.10" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.14" revision="refs/heads/firmware-setzer-7287.360.B-firmware-strago-7287.B-chromeos-3.14" />
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.18" revision="refs/heads/firmware-setzer-7287.360.B-firmware-strago-7287.B-chromeos-3.18" />
+  <project name="chromiumos/third_party/kernel-next" path="src/third_party/kernel/v3.18-experiment" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/gcc" path="src/third_party/gcc" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/binutils" path="src/third_party/binutils" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/u-boot" path="src/third_party/u-boot/files" revision="refs/heads/firmware-setzer-7287.360.B-firmware-strago-7287.B-chromeos-v2013.06" />
+  <project name="chromiumos/third_party/u-boot" path="src/third_party/u-boot/next" revision="refs/heads/firmware-setzer-7287.360.B-firmware-strago-7287.B-chromeos-v2015.07-rc1" />
+  <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="minilayout,project_sdk" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="minilayout,project_sdk" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="refs/heads/firmware-setzer-7287.360.B" sync-c="true" />
+  <project groups="minilayout,project_sdk" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/modemmanager-next" path="src/third_party/modemmanager-next" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/libresample" path="src/third_party/libresample" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project groups="project_sdk" name="chromiumos/third_party/rootdev" path="src/third_party/rootdev" revision="refs/heads/firmware-setzer-7287.360.B" /> 
+  <project name="chromiumos/third_party/grub2" path="src/third_party/grub2" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/dbus-cplusplus" path="src/third_party/dbus-c++" revision="refs/heads/firmware-setzer-7287.360.B" />
+  <project name="chromiumos/third_party/libv4lplugins" path="src/third_party/libv4lplugins" revision="refs/heads/firmware-setzer-7287.360.B" />
 
   
   <project name="chromium/src/components/metrics" path="chromium/src/components/metrics" revision="9f8d4f96900b543e191234c04f182c6de5f9869d" />
@@ -160,6 +161,6 @@ Your sources have been sync'd successfully.
   <project name="platform/external/modp_b64" path="src/third_party/modp_b64" remote="aosp" revision="cd5ed19e85c8de365ba7ac081525f0d51267b371" />
 
   
-  <project name="chromiumos/manifest" path="manifest" />
+  <project name="chromiumos/manifest" path="manifest" revision="refs/heads/firmware-setzer-7287.360.B" />
 
 </manifest>
