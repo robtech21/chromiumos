@@ -145,6 +145,33 @@ Your sources have been sync'd successfully.
   <project path="src/platform/mosys" name="chromiumos/platform/mosys" />
   <project path="src/platform/mttools" name="chromiumos/platform/mttools" />
   <project path="src/platform/newblue" name="chromiumos/platform/newblue" />
+  <!-- Begin: EC-based release firmware.
+       See http://go/cros-fingerprint-firmware-branching-and-signing -->
+  <project path="src/platform/release-firmware/fpmcu-bloonchipper"
+           groups="firmware"
+           name="chromiumos/platform/ec"
+           revision="refs/heads/firmware-fpmcu-bloonchipper-release">
+    <annotation name="branch-mode" value="pin" />
+  </project>
+  <project path="src/platform/release-firmware/fpmcu-dartmonkey"
+           groups="firmware"
+           name="chromiumos/platform/ec"
+           revision="refs/heads/firmware-fpmcu-dartmonkey-release">
+    <annotation name="branch-mode" value="pin" />
+  </project>
+  <project path="src/platform/release-firmware/fpmcu-nami"
+           groups="firmware"
+           name="chromiumos/platform/ec"
+           revision="refs/heads/firmware-nocturne-10984.B">
+    <annotation name="branch-mode" value="pin" />
+  </project>
+  <project path="src/platform/release-firmware/fpmcu-nocturne"
+           groups="firmware"
+           name="chromiumos/platform/ec"
+           revision="refs/heads/firmware-nocturne-10984.B">
+    <annotation name="branch-mode" value="pin" />
+  </project>
+  <!-- End: EC-based release firmware -->
   <project path="src/platform/tast" name="chromiumos/platform/tast" />
   <project path="src/platform/tast-tests"
            name="chromiumos/platform/tast-tests" />
