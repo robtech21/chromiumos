@@ -8,17 +8,17 @@ Your sources have been sync'd successfully.
   </notice>
 
   <project path="src/repohooks" name="chromiumos/repohooks"
-           groups="minilayout,firmware,buildtools,labtools" />
+           groups="minilayout,firmware,buildtools,labtools,crosvm" />
   <repo-hooks in-project="chromiumos/repohooks" enabled-list="pre-upload" />
 
   <project path="src/config"
            name="chromiumos/config" />
-  <project path="docs" name="chromiumos/docs" />
+  <project path="docs" name="chromiumos/docs" groups="crosvm" />
   <project path="infra_virtualenv"
            groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver"
            name="chromiumos/infra_virtualenv" />
   <project path="chromite" name="chromiumos/chromite"
-           groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" >
+           groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver,crosvm" >
     <copyfile src="AUTHORS" dest="AUTHORS" />
     <copyfile src="LICENSE" dest="LICENSE" />
   </project>
@@ -81,6 +81,7 @@ Your sources have been sync'd successfully.
   <project path="src/aosp/external/libchrome"
            name="aosp/platform/external/libchrome" />
   <project path="src/aosp/external/minijail"
+           groups="crosvm"
            name="platform/external/minijail"
            remote="aosp" />
   <project path="src/aosp/system/libsync"
@@ -116,7 +117,9 @@ Your sources have been sync'd successfully.
   <project path="src/platform/crostestutils"
            name="chromiumos/platform/crostestutils"
            groups="minilayout,firmware,buildtools" />
-  <project path="src/platform/crosvm" name="chromiumos/platform/crosvm" />
+  <project path="src/platform/crosvm"
+           groups="crosvm"
+           name="chromiumos/platform/crosvm" />
   <project path="src/platform/depthcharge"
            groups="firmware"
            name="chromiumos/platform/depthcharge" />
@@ -210,6 +213,7 @@ Your sources have been sync'd successfully.
            groups="minilayout,firmware,buildtools,labtools" />
 
   <project path="src/third_party/adhd"
+           groups="crosvm"
            name="chromiumos/third_party/adhd"/>
   <project path="src/third_party/arm-trusted-firmware"
            name="chromiumos/third_party/arm-trusted-firmware" />
