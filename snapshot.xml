@@ -50,8 +50,8 @@
   <project name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="fb95d5b1a4d5029a4c516af0e15546e23e9b8dfe" upstream="refs/heads/master"/>
   <project name="chromiumos/manifest" path="manifest" revision="857387e3fb158c46352ff68b9ad3bcdd649d5164" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="85419a7637e61f7e1b1883a9347361ed4201518b" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="40a460acc73f0ac49911540dd22e28120aaafad5" sync-c="true" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="449443b6839c21cec03d1f9ad56417530f5f9f51" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="bd8fb896f541d7d8001273eb9058818d88050f57" sync-c="true" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="251d37017b1c329a957573556168481d041e1520" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="241d777fea02ea0be4bf1dd2433f307263bf102b" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="ab44a34ab33991db347af3ada0da4727b6011e25" upstream="refs/heads/master"/>
@@ -118,7 +118,7 @@
   <project name="chromiumos/platform/tpm_lite" path="src/platform/tpm_lite" revision="dd6ae9f3a223c0a8a89a2e4c10600f7700354a53" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/tremplin" path="src/platform/tremplin" revision="f65a608bda6c7ee1669f9deba5a9ecb1bd155cda" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/uboot-env" path="src/platform/uboot-env" revision="5ad506f38e25df5361f1ec7892e9b4f201590a64" upstream="refs/heads/master"/>
-  <project groups="firmware,buildtools" name="chromiumos/platform/vboot_reference" path="src/platform/vboot_reference" revision="4da0add3b390e9aecd2113375abae874318c7cf4" upstream="refs/heads/master"/>
+  <project groups="firmware,buildtools" name="chromiumos/platform/vboot_reference" path="src/platform/vboot_reference" revision="cebb4f5912d2a72f86e43d9552edcf881806c6b9" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/vkbench" path="src/platform/vkbench" revision="11a2c69dd68ef99efc402f13ec6db6f06a4eaacd" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/vpd" path="src/platform/vpd" revision="127c5e645a90adbfca7f7a080ace19d9b992eee4" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/webplot" path="src/platform/webplot" revision="bbd5ea22ef9f8e109e363b26958d9a2fc8921f0f" upstream="refs/heads/master"/>
@@ -154,7 +154,7 @@
   <project groups="firmware" name="chromiumos/third_party/em100" path="src/third_party/em100" revision="d05f960a7d7efa2fd122797083c18bc68b905bb4" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/fastrpc" path="src/third_party/fastrpc" revision="c2d1cdc0fb781ee673077c5d4b243eb239c73bb5" upstream="refs/heads/master"/>
   <project groups="firmware" name="chromiumos/third_party/flashmap" path="src/third_party/flashmap" revision="2f7b2e16f588dde75a0c9c28175f16b8cb9e11dc" upstream="refs/heads/master"/>
-  <project groups="firmware" name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" revision="018a6dfea020efa77694a26922a73826bb77569d" upstream="refs/heads/master"/>
+  <project groups="firmware" name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" revision="6d8a88b63fb0565a104e4a843e75963c574fb33d" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/fwupd" path="src/third_party/fwupd" revision="50ca38da3f02b2b2b816c5343a0de6dcd22a02b5" upstream="refs/heads/fwupd-1.3.8"/>
   <project groups="labtools" name="chromiumos/third_party/hdctools" path="src/third_party/hdctools" revision="045d4d14216c8bb50d265a4723eab1a5804bf1fe" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant" revision="d31b6009198303cd16ae76e4a83a304c1734097d" upstream="refs/heads/master"/>
@@ -195,7 +195,7 @@
   <project name="chromiumos/third_party/logitech-updater" path="src/third_party/logitech-updater" revision="136c962a807127d0ed3f8860ec2e60cf2191ce53" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/ltp" path="src/third_party/ltp" revision="08733aa7d62b171c667d3eb7e299aa7345053fa9" upstream="refs/heads/chromeos-20150119"/>
   <project name="chromiumos/third_party/marvell" path="src/third_party/marvell" revision="82b4358bb82a8be3eb2ee1723736229acb6e6c03" upstream="refs/heads/master"/>
-  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="e924181ea89e5e261f8aa24564c32ed22941e752" upstream="refs/heads/master"/>
+  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="33b255e107b470b8d2ea5bd96d82c613244aaf47" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-amd" revision="98da2086606c52af0f043eb5b838a3857012ca20" upstream="refs/heads/chromeos-amd"/>
   <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-debian" revision="c36b89b82bcd270e1f9ee7d0824c9e265a39e95b" upstream="refs/heads/debian"/>
   <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-freedreno" revision="53aa9dc959a9ffdd6da5de9652457a5f526b3f85" upstream="refs/heads/chromeos-freedreno"/>
