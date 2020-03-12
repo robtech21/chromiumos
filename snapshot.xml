@@ -50,8 +50,8 @@
   <project name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="fb95d5b1a4d5029a4c516af0e15546e23e9b8dfe" upstream="refs/heads/master"/>
   <project name="chromiumos/manifest" path="manifest" revision="857387e3fb158c46352ff68b9ad3bcdd649d5164" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="6cf3b0e10a5c2850bff85360168c33c90db199d1" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="480570e82fc9da02bafafedc6661424058564c6f" sync-c="true" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="949db728ebbb12a93cdb480a9b64fb480f8e24f6" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="be461e0658bbe7981e68ef9d988edf894ee0dff5" sync-c="true" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="251d37017b1c329a957573556168481d041e1520" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="241d777fea02ea0be4bf1dd2433f307263bf102b" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="ab44a34ab33991db347af3ada0da4727b6011e25" upstream="refs/heads/master"/>
@@ -104,7 +104,7 @@
   <project name="chromiumos/platform/libevdev" path="src/platform/libevdev" revision="76d515ae4ac4d7ad4f4dc3f82cb730f8a85779ad" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/microbenchmarks" path="src/platform/microbenchmarks" revision="c7ece0f317b6ef8343f01fc2b07a47cee81c9ba3" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/minigbm" path="src/platform/minigbm" revision="9b367b3efed08fee7568dee8600dcf9335d547ef" upstream="refs/heads/master"/>
-  <project groups="notdefault,moblab" name="chromiumos/platform/moblab" path="src/platform/moblab" revision="d0c75b0856563aa2fca06f0d79ef49d231294eff" upstream="refs/heads/master"/>
+  <project groups="notdefault,moblab" name="chromiumos/platform/moblab" path="src/platform/moblab" revision="5417b43960b56f2cef406a9202cddc998d5e7782" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/mosys" path="src/platform/mosys" revision="6bd0621ffc3afb00b29a01c94a6a7343fc67cb21" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/mttools" path="src/platform/mttools" revision="85378eece16f5dbef70a329f321776914b795bbd" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/newblue" path="src/platform/newblue" revision="1dfb9d768aa95a93fda0242a287f213c4c1e41db" upstream="refs/heads/master"/>
@@ -131,7 +131,7 @@
   <project name="chromiumos/third_party/arm-trusted-firmware" path="src/third_party/arm-trusted-firmware" revision="d537ee795c1390601428d6b5b3499d05b62ad271" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/atheros" path="src/third_party/atheros" revision="97c9ec1e9d4b66a3b8dacf6d9e13540eda4938bd" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/atrusctl" path="src/third_party/atrusctl" revision="ccec86a302a4000f39a3b7f8f05b520fcc548a27" upstream="refs/heads/master"/>
-  <project groups="buildtools,labtools,devserver" name="chromiumos/third_party/autotest" path="src/third_party/autotest/files" revision="7e6647540e707cfe99700122fec7c3f4054b1f93" upstream="refs/heads/master"/>
+  <project groups="buildtools,labtools,devserver" name="chromiumos/third_party/autotest" path="src/third_party/autotest/files" revision="43185916a44ddc1c2454c021ffee14554557b09d" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/aver-updater" path="src/third_party/aver-updater" revision="4332c7b0d5e5da36ae72e29a22d78afbd392b9f7" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/bluez" path="src/third_party/bluez" revision="3da7663cefeb8ceab13b0f0556ed16cb6572ed0e" upstream="refs/heads/chromeos-5.44"/>
   <project name="chromiumos/third_party/bluez" path="src/third_party/bluez-next" revision="1524499483a3678951c0e3059b158836398c4e9b" upstream="refs/heads/chromeos-5.53"/>
@@ -195,7 +195,7 @@
   <project name="chromiumos/third_party/logitech-updater" path="src/third_party/logitech-updater" revision="7a0452255e1562936beca7895b8077294978a58c" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/ltp" path="src/third_party/ltp" revision="08733aa7d62b171c667d3eb7e299aa7345053fa9" upstream="refs/heads/chromeos-20150119"/>
   <project name="chromiumos/third_party/marvell" path="src/third_party/marvell" revision="82b4358bb82a8be3eb2ee1723736229acb6e6c03" upstream="refs/heads/master"/>
-  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="84f97a21a669a42d458d9d8c7f52b65c4af355b5" upstream="refs/heads/master"/>
+  <project name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="a46e9f4d9ac827e4e5ecfee4bf24e38cb09e349b" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-amd" revision="98da2086606c52af0f043eb5b838a3857012ca20" upstream="refs/heads/chromeos-amd"/>
   <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-debian" revision="c36b89b82bcd270e1f9ee7d0824c9e265a39e95b" upstream="refs/heads/debian"/>
   <project name="chromiumos/third_party/mesa" path="src/third_party/mesa-freedreno" revision="53aa9dc959a9ffdd6da5de9652457a5f526b3f85" upstream="refs/heads/chromeos-freedreno"/>
