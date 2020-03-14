@@ -50,8 +50,8 @@
   <project name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="fb95d5b1a4d5029a4c516af0e15546e23e9b8dfe" upstream="refs/heads/master"/>
   <project name="chromiumos/manifest" path="manifest" revision="38b1056a8833c7862536d8c499a8ec532b9e5803" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="77cafdddb1d149217492b22eb89d23b4b3716cbd" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="fd8d4c52ade630e7075d022a1cf4cdd11aca0371" sync-c="true" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="f11fd73283a10f211ed473ea013cc92d9fb9c885" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="8edd5e8c4403f17c11fcc397e629f4814bd4fe28" sync-c="true" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="251d37017b1c329a957573556168481d041e1520" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="145b29b2179a641aae491e4af90762d1cd15dc9c" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="ab44a34ab33991db347af3ada0da4727b6011e25" upstream="refs/heads/master"/>
@@ -70,7 +70,7 @@
   <project groups="minilayout,firmware,buildtools,labtools" name="chromiumos/platform/crosutils" path="src/scripts" revision="583de62154709fc0ae37349231c42ffdb52042aa" upstream="refs/heads/master"/>
   <project groups="crosvm" name="chromiumos/platform/crosvm" path="src/platform/crosvm" revision="cba39f2fefc7dd1f38ffdae8451e530f16c06038" upstream="refs/heads/master"/>
   <project groups="firmware" name="chromiumos/platform/depthcharge" path="src/platform/depthcharge" revision="9fa86508e378ecc680d8f7803db03d41281ad0f3" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware,buildtools,devserver" name="chromiumos/platform/dev-util" path="src/platform/dev" revision="aec8d999cac16fad6449fbf05cfb851668a0e310" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware,buildtools,devserver" name="chromiumos/platform/dev-util" path="src/platform/dev" revision="6403885f9d2af3a4bdde4e1e746285b8cd45f8c2" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/dm-verity" path="src/platform/verity" revision="393cd4d510256b0bb2bdd0acd9656105cfd28771" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/drm-tests" path="src/platform/drm-tests" revision="a5d9ff257828e2ac18a95c8cb5363f8c598e4f58" upstream="refs/heads/master"/>
   <project groups="firmware" name="chromiumos/platform/ec" path="src/platform/cr50" revision="a89c0928fd0339d12645d6c15f2b3010b1429977" upstream="refs/heads/cr50_stab"/>
@@ -103,7 +103,7 @@
   <project name="chromiumos/platform/jabra_vold" path="src/platform/jabra_vold" revision="233d517d2904912b207d273794b0ec5343e48010" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/libevdev" path="src/platform/libevdev" revision="76d515ae4ac4d7ad4f4dc3f82cb730f8a85779ad" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/microbenchmarks" path="src/platform/microbenchmarks" revision="c7ece0f317b6ef8343f01fc2b07a47cee81c9ba3" upstream="refs/heads/master"/>
-  <project name="chromiumos/platform/minigbm" path="src/platform/minigbm" revision="cfcea2f16549205a2a7e626cc38e995acd54cbaa" upstream="refs/heads/master"/>
+  <project name="chromiumos/platform/minigbm" path="src/platform/minigbm" revision="912c4c33a9e5d14c6509e27a82961b52dc557112" upstream="refs/heads/master"/>
   <project groups="moblab" name="chromiumos/platform/moblab" path="src/platform/moblab" revision="5871ee6b3cc45937c6e48f9587be2ffd1ae7c5e6" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/mosys" path="src/platform/mosys" revision="6bd0621ffc3afb00b29a01c94a6a7343fc67cb21" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/mttools" path="src/platform/mttools" revision="85378eece16f5dbef70a329f321776914b795bbd" upstream="refs/heads/master"/>
@@ -156,7 +156,7 @@
   <project groups="firmware" name="chromiumos/third_party/flashmap" path="src/third_party/flashmap" revision="2f7b2e16f588dde75a0c9c28175f16b8cb9e11dc" upstream="refs/heads/master"/>
   <project groups="firmware" name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" revision="e146f9ae0967ae1166a024ea19338c92d53155ea" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/fwupd" path="src/third_party/fwupd" revision="50ca38da3f02b2b2b816c5343a0de6dcd22a02b5" upstream="refs/heads/fwupd-1.3.8"/>
-  <project groups="labtools" name="chromiumos/third_party/hdctools" path="src/third_party/hdctools" revision="2540785f7d0ea86ce51bcb69eb45ba6cb8391fde" upstream="refs/heads/master"/>
+  <project groups="labtools" name="chromiumos/third_party/hdctools" path="src/third_party/hdctools" revision="a79d01d0b72992eecec68404821214c49dd16e70" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant" revision="d31b6009198303cd16ae76e4a83a304c1734097d" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant-2.6" revision="3ded20802faab538bd115d683285a11e3b80b4cf" upstream="refs/heads/wpa_supplicant-2.6"/>
   <project name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant-2.8" revision="46ddd78934d1ca28f16fb58579281388ef7732c9" upstream="refs/heads/wpa_supplicant-2.8"/>
