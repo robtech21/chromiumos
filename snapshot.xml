@@ -39,7 +39,7 @@
   </project>
   <project name="chromiumos/infra/logstock" path="infra/logstock" revision="c2de7b36693e42be0598e48d426d0383c0b82403" upstream="refs/heads/master"/>
   <project name="chromiumos/infra/lucifer" path="infra/lucifer" revision="6760b012f5dc8dbc0a63d37e2cde5d67febe4cb0" upstream="refs/heads/master"/>
-  <project name="chromiumos/infra/proto" path="chromite/infra/proto" revision="e1cb8442dea8fb5603e1bb6a862491abe6da772f" upstream="refs/heads/master">
+  <project name="chromiumos/infra/proto" path="chromite/infra/proto" revision="0fb32b4b98827f6039b8f7ee6702235028f675a8" upstream="refs/heads/master">
     <annotation name="branch-mode" value="tot"/>
   </project>
   <project groups="chromeos-admin" name="chromiumos/infra/recipes" path="infra/recipes" revision="4c4d0fa2ed8cb7ef98cb565cd464d709ace585bf" upstream="refs/heads/master">
@@ -50,8 +50,8 @@
   <project name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="73fe69928d56768071c16908111992837640b385" upstream="refs/heads/master"/>
   <project name="chromiumos/manifest" path="manifest" revision="3d77755da28fcf2f60c5b3a0a13c5f4ac88251a9" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="6e4176ae82290132cf603f7b38b7035416488c9b" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="bb3e199fe2ce6a0fcdef80e74e194195e169bf0c" sync-c="true" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="9c2ee5d1f067fb4e43c45dab615e19d1dc9935ab" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="9c30fe4e07752ea138aff6709772980f9a51003f" sync-c="true" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="318901042ff383000a9a4ae12de5239abcf1e18c" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="832d31cba0d1eead040889199574203cacf7390d" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="ab44a34ab33991db347af3ada0da4727b6011e25" upstream="refs/heads/master"/>
@@ -74,7 +74,7 @@
   <project name="chromiumos/platform/dm-verity" path="src/platform/verity" revision="393cd4d510256b0bb2bdd0acd9656105cfd28771" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/drm-tests" path="src/platform/drm-tests" revision="d9e1caad83e42d5f80a7cdceec9a8fb92a2b53f9" upstream="refs/heads/master"/>
   <project groups="firmware" name="chromiumos/platform/ec" path="src/platform/cr50" revision="d1e1f87dd72650f5265f33b3f69ca8aa4d063162" upstream="refs/heads/cr50_stab"/>
-  <project groups="firmware" name="chromiumos/platform/ec" path="src/platform/ec" revision="7107a70c8c583f128838fc48fef7a6ebbea91188" upstream="refs/heads/master"/>
+  <project groups="firmware" name="chromiumos/platform/ec" path="src/platform/ec" revision="471a3914c32d856610b237bdb9e12ad8790a5ae3" upstream="refs/heads/master"/>
   <project groups="firmware" name="chromiumos/platform/ec" path="src/platform/release-firmware/fpmcu-bloonchipper" revision="f45c30a9ab5b2cf51d3d822413055ca2996d9080" upstream="refs/heads/firmware-fpmcu-bloonchipper-release">
     <annotation name="branch-mode" value="pin"/>
   </project>
@@ -125,7 +125,7 @@
   <project name="chromiumos/platform/vpd" path="src/platform/vpd" revision="127c5e645a90adbfca7f7a080ace19d9b992eee4" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/webplot" path="src/platform/webplot" revision="bbd5ea22ef9f8e109e363b26958d9a2fc8921f0f" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/xorg-conf" path="src/platform/xorg-conf" revision="288b7224e9a3bd872eada9341d8dc76f6b41a293" upstream="refs/heads/master"/>
-  <project name="chromiumos/platform2" path="src/platform2" revision="ea13d695a92ca57463d12f0f15be97993bb16452" upstream="refs/heads/master"/>
+  <project name="chromiumos/platform2" path="src/platform2" revision="dd3bd80bdf1dd80b70f09301708c124be72ff83d" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,buildtools,labtools,crosvm" name="chromiumos/repohooks" path="src/repohooks" revision="69d3e18502d1cb317938ab86cf94aba2ee8e608f" upstream="refs/heads/master"/>
   <project groups="crosvm" name="chromiumos/third_party/adhd" path="src/third_party/adhd" revision="562d6e3a5aa528aaccef7a5919138f8df9fc6c60" upstream="refs/heads/master"/>
   <project name="chromiumos/third_party/apitrace" path="src/third_party/apitrace" revision="6ccf5bbdafd3c3ea767e0622e3f098067b010664" upstream="refs/heads/master"/>
@@ -230,7 +230,7 @@
   <project name="external/git.kernel.org/fs/xfs/xfstests-dev" path="src/third_party/xfstests" revision="b2faf2047019c6290a4373ae214738f4fbfbf2f1" upstream="refs/heads/master"/>
   <project groups="buildtools,chromeos-admin,firmware,labtools,minilayout" name="infra/luci/client-py" path="chromite/third_party/swarming.client" remote="chromium" revision="34b20305c7a69eb89e1abd5e2a94708db999f0a9"/>
   <project name="linux-syscall-support" path="src/third_party/breakpad/src/third_party/lss" revision="8048ece6c16c91acfe0d36d1d3cc0890ab6e945c"/>
-  <project name="platform/external/bsdiff" path="src/aosp/external/bsdiff" remote="aosp" revision="b7e5a2246fbae363a27cdb8b648c1dcccc446688" upstream="refs/heads/master"/>
+  <project name="platform/external/bsdiff" path="src/aosp/external/bsdiff" remote="aosp" revision="090c86526c8ed3cbf674e87ccec58220c576675d" upstream="refs/heads/master"/>
   <project name="platform/external/libcxx" path="src/aosp/external/libcxx" remote="aosp" revision="2d6d9ab848d7e0490dfdea52e5ec15beca9a74d8" upstream="refs/heads/master"/>
   <project name="platform/external/libcxxabi" path="src/aosp/external/libcxxabi" remote="aosp" revision="ed96332532dd7a6b741b7645bde359fe5af376a4" upstream="refs/heads/master"/>
   <project name="platform/external/libunwind_llvm" path="src/aosp/external/libunwind_llvm" remote="aosp" revision="98d90944b3ef000dd6716c57a480f52a6726749d" upstream="refs/heads/master"/>
