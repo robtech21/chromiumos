@@ -18,7 +18,7 @@
   <project name="chromium/src/third_party/Python-Markdown" path="src/chromium/src/third_party/Python-Markdown" remote="chromium" revision="36657c103ce5964733bbbb29377085e9cc1a9472" upstream="refs/heads/master"/>
   <project name="chromium/src/tools/md_browser" path="src/chromium/src/tools/md_browser" remote="chromium" revision="aae45d8d82400e90483d4fee2ca3e648f2313cb2" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,buildtools,labtools" name="chromium/tools/depot_tools" path="src/chromium/depot_tools" remote="chromium" revision="19d4809e112652f918494840bab819603b0a2816"/>
-  <project groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver,crosvm" name="chromiumos/chromite" path="chromite" revision="4943136351b10d0a2e8c8a34a8f7e54e5c782267" upstream="refs/heads/master">
+  <project groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver,crosvm" name="chromiumos/chromite" path="chromite" revision="fe92429b6425db3719081561c8ffbf0cbe19cfa3" upstream="refs/heads/master">
     <copyfile dest="AUTHORS" src="AUTHORS"/>
     <copyfile dest="LICENSE" src="LICENSE"/>
   </project>
@@ -50,8 +50,8 @@
   <project name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="860d726e3cc0bba38b52a8a2a512e2a703c6cdfa" upstream="refs/heads/master"/>
   <project name="chromiumos/manifest" path="manifest" revision="e492ad0d5b471af0ddb633263783ea133eb6bc82" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="1e2cabe25bc269aea03053b63100814ea7e80f82" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="da3b5b21ebc87252e11dff903bfe9b86a65c1c45" sync-c="true" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="c67e2e3ba6709bb92f8910eae083758ca7bb3b48" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="7beb5c424e76f813947fd7ab337ee537b4eb2172" sync-c="true" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="c1e0dfa1b950893020917232fe3acb51c1a9c902" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="21e051d8b1760a96362ca6d49f6f7102f780392b" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="ab44a34ab33991db347af3ada0da4727b6011e25" upstream="refs/heads/master"/>
@@ -140,7 +140,7 @@
   <project name="chromiumos/third_party/bluez" path="src/third_party/bluez-next" revision="baa297e34ed06ed5e506742a9cf539e8d9fbacda" upstream="refs/heads/chromeos-5.54"/>
   <project groups="firmware" name="chromiumos/third_party/bootstub" path="src/third_party/bootstub" revision="e69fbecd355bf860f4bf165fb83abb354e513fa8" upstream="refs/heads/master"/>
   <project groups="firmware" name="chromiumos/third_party/cbootimage" path="src/third_party/cbootimage" revision="b7d5b2d6a6dd05874d86ee900ff441d261f9034c" upstream="refs/heads/master"/>
-  <project groups="firmware" name="chromiumos/third_party/coreboot" path="src/third_party/coreboot" revision="979c7383122f4c638691377471af54c82643367d" upstream="refs/heads/chromeos-2016.05"/>
+  <project groups="firmware" name="chromiumos/third_party/coreboot" path="src/third_party/coreboot" revision="249f2e69ba5954a1b587d79e03e6b193e206246b" upstream="refs/heads/chromeos-2016.05"/>
   <project groups="firmware" name="chromiumos/third_party/coreboot" path="src/third_party/coreboot-zork" revision="216a6be9173c26bd3389b5139553024187c62895" upstream="refs/heads/trembyle-bringup"/>
   <project groups="firmware" name="chromiumos/third_party/coreboot/amd_blobs" path="src/third_party/coreboot-zork/3rdparty/amd_blobs" revision="919f7fde98d6b76e6b0f4f7ec5d4e8153ed575f8"/>
   <project groups="firmware" name="chromiumos/third_party/coreboot/amd_blobs" path="src/third_party/coreboot/3rdparty/amd_blobs" revision="919f7fde98d6b76e6b0f4f7ec5d4e8153ed575f8"/>
@@ -179,7 +179,7 @@
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-ht" revision="878295c31c22a257f46a15920d0f3be094364c30" upstream="refs/heads/chromeos-4.19-ht"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-lakitu" revision="dd0af5f0470305c2f98a52973dd24f4cc5f08729" upstream="refs/heads/chromeos-4.19-lakitu"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-manatee" revision="24ff99a0f713b183bc14cc5a22532a4f6bb3d576" upstream="refs/heads/chromeos-4.19-manatee"/>
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4" revision="3e91e4e0e542e925e7dee1ccccd16f415d308e66" upstream="refs/heads/chromeos-5.4"/>
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4" revision="0376247af069c3981041e22db8d92cd99525b34b" upstream="refs/heads/chromeos-5.4"/>
   <project groups="notdefault,kernel-next" name="chromiumos/third_party/kernel-next" path="src/third_party/kernel/next" revision="70dc750d1eccee606109f781428124a1a679e544" upstream="refs/heads/chromeos-next">
     <annotation name="branch-mode" value="tot"/>
   </project>
