@@ -23,7 +23,7 @@
     <copyfile dest="AUTHORS" src="AUTHORS"/>
     <copyfile dest="LICENSE" src="LICENSE"/>
   </project>
-  <project groups="partner-config" name="chromiumos/config" path="src/config" revision="6cb4f65ccd352b22f8f01b653ff5ec92a1c78efc" upstream="refs/heads/master"/>
+  <project groups="partner-config" name="chromiumos/config" path="src/config" revision="78d3e62b7bf1ed8a4bd4aab156bc1166a16e5525" upstream="refs/heads/master"/>
   <project name="chromiumos/containers/cros-container-guest-tools" path="src/platform/container-guest-tools" revision="fce526ea2de17296076790b2f61a6d6cac8d739d" upstream="refs/heads/master"/>
   <project groups="crosvm" name="chromiumos/docs" path="docs" revision="7291c006df3925d8ea22a3c0221caa2482218934" upstream="refs/heads/master"/>
   <project name="chromiumos/graphyte" path="src/platform/graphyte" revision="dbaec98fc97ebbbf2aa3ac81ee3f4502a55a4038" upstream="refs/heads/master"/>
@@ -43,7 +43,7 @@
   <project name="chromiumos/infra/proto" path="chromite/infra/proto" revision="d3be83dc912afbcddd51fc0d6953b3a0a37c2cbd" upstream="refs/heads/master">
     <annotation name="branch-mode" value="tot"/>
   </project>
-  <project groups="chromeos-admin" name="chromiumos/infra/recipes" path="infra/recipes" revision="9e16a45b4f2865d09bfe9fa2e3257ee3589a80e0" upstream="refs/heads/master">
+  <project groups="chromeos-admin" name="chromiumos/infra/recipes" path="infra/recipes" revision="26102111c0a9b7bbd96596ea9ceeebfdab45933e" upstream="refs/heads/master">
     <annotation name="branch-mode" value="tot"/>
   </project>
   <project groups="chromeos-admin,labtools" name="chromiumos/infra/skylab_inventory" path="infra/skylab_inventory" revision="b8cad5d99520a59747590cc8fff023d0546a3868" upstream="refs/heads/master"/>
@@ -52,7 +52,7 @@
   <project groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="3d6e8a083912d550e5f3fd5c4c6e5f3fccd2d574" upstream="refs/heads/master"/>
   <project name="chromiumos/manifest" path="manifest" revision="d41e3e5dbecc09924322c4fb1a229fd6f3d3f146" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="ee31fa713ae389a0632121eef11a71738532c300" upstream="refs/heads/master"/>
-  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="5325896b2b95957ae58a04dde54a0297be732ab6" sync-c="true" upstream="refs/heads/master"/>
+  <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="09c4a9baebc41d6d2383f4c0e94ed74ce39cbb5a" sync-c="true" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="c1e0dfa1b950893020917232fe3acb51c1a9c902" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="145ba791fe66b3c1ecce22b184c55c4117fa6221" upstream="refs/heads/master"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="ab44a34ab33991db347af3ada0da4727b6011e25" upstream="refs/heads/master"/>
@@ -143,7 +143,7 @@
   <project groups="firmware" name="chromiumos/third_party/bootstub" path="src/third_party/bootstub" revision="e69fbecd355bf860f4bf165fb83abb354e513fa8" upstream="refs/heads/master"/>
   <project groups="firmware" name="chromiumos/third_party/cbootimage" path="src/third_party/cbootimage" revision="b7d5b2d6a6dd05874d86ee900ff441d261f9034c" upstream="refs/heads/master"/>
   <project groups="firmware" name="chromiumos/third_party/coreboot" path="src/third_party/coreboot" revision="541f3af6c61ec86e0eb91020782b814d7bd587db" upstream="refs/heads/chromeos-2016.05"/>
-  <project groups="firmware" name="chromiumos/third_party/coreboot" path="src/third_party/coreboot-zork" revision="244544e7007ea43538b67df3d8cc6288365e7195" upstream="refs/heads/trembyle-bringup"/>
+  <project groups="firmware" name="chromiumos/third_party/coreboot" path="src/third_party/coreboot-zork" revision="0c8fffe63b365fc250a83608c809eaf1f2cc0286" upstream="refs/heads/trembyle-bringup"/>
   <project groups="firmware" name="chromiumos/third_party/coreboot/amd_blobs" path="src/third_party/coreboot-zork/3rdparty/amd_blobs" revision="919f7fde98d6b76e6b0f4f7ec5d4e8153ed575f8"/>
   <project groups="firmware" name="chromiumos/third_party/coreboot/amd_blobs" path="src/third_party/coreboot/3rdparty/amd_blobs" revision="919f7fde98d6b76e6b0f4f7ec5d4e8153ed575f8"/>
   <project groups="firmware" name="chromiumos/third_party/coreboot/blobs" path="src/third_party/coreboot-zork/3rdparty/blobs" revision="e096a83255073a996e26d878433a190d7fa36931" upstream="refs/heads/trembyle-bringup"/>
@@ -181,7 +181,7 @@
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-ht" revision="878295c31c22a257f46a15920d0f3be094364c30" upstream="refs/heads/chromeos-4.19-ht"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-lakitu" revision="dd0af5f0470305c2f98a52973dd24f4cc5f08729" upstream="refs/heads/chromeos-4.19-lakitu"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-manatee" revision="24ff99a0f713b183bc14cc5a22532a4f6bb3d576" upstream="refs/heads/chromeos-4.19-manatee"/>
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4" revision="b1003bb9a8fd98f75bbb9c62b4edc08437a05e03" upstream="refs/heads/chromeos-5.4"/>
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4" revision="8951845d682e498d40843db8b521a97eda1d75ab" upstream="refs/heads/chromeos-5.4"/>
   <project groups="notdefault,kernel-next" name="chromiumos/third_party/kernel-next" path="src/third_party/kernel/next" revision="70dc750d1eccee606109f781428124a1a679e544" upstream="refs/heads/chromeos-next">
     <annotation name="branch-mode" value="tot"/>
   </project>
