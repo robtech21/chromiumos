@@ -23,7 +23,7 @@
   <project dest-branch="refs/heads/master" name="chromium/src/third_party/Python-Markdown" path="src/chromium/src/third_party/Python-Markdown" remote="chromium" revision="36657c103ce5964733bbbb29377085e9cc1a9472" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromium/src/tools/md_browser" path="src/chromium/src/tools/md_browser" remote="chromium" revision="aae45d8d82400e90483d4fee2ca3e648f2313cb2" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,buildtools,labtools" name="chromium/tools/depot_tools" path="src/chromium/depot_tools" remote="chromium" revision="19d4809e112652f918494840bab819603b0a2816"/>
-  <project dest-branch="refs/heads/master" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver,crosvm" name="chromiumos/chromite" path="chromite" revision="2c5bf90b6ebd3071ed51db85504528c46aa2694c" upstream="refs/heads/master">
+  <project dest-branch="refs/heads/master" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver,crosvm" name="chromiumos/chromite" path="chromite" revision="4e46986179cba35ed7a8944d804b28e4b4495aac" upstream="refs/heads/master">
     <copyfile dest="AUTHORS" src="AUTHORS"/>
     <copyfile dest="LICENSE" src="LICENSE"/>
   </project>
@@ -55,8 +55,8 @@
   <project dest-branch="refs/heads/master" name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="3d6e8a083912d550e5f3fd5c4c6e5f3fccd2d574" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/manifest" path="manifest" revision="8b71a6ad5b93f76416f2ab688c8995cff51d3d13" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="00a7964b849c7176160bb8e0e07f5837112a0353" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="c80a8cd85fbede5d998fbe9cb5ba534d7b76f445" sync-c="true" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="2da61660161ef3dfee3e7790c016392de52b2cce" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="2e933b4012dbf6bff30adfc63910fd34a804e1f5" sync-c="true" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="57c2839613bf1a47b60fa18601db5848dc531db4" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="edd6a28e6a072c057d1545ca000fd9d5ac719b75" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/assets" path="src/platform/assets" revision="ab44a34ab33991db347af3ada0da4727b6011e25" upstream="refs/heads/master"/>
@@ -67,7 +67,7 @@
   <project dest-branch="refs/heads/master" name="chromiumos/platform/bootcache" path="src/platform/bootcache" revision="6ed1eea32f34b2ef5f0d88ba45eb728186c7458a" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/btsocket" path="src/platform/btsocket" revision="e1cb3b9c86ec37b742be1b59ee973e0eea35d2e3" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/cbor" path="src/platform/cbor" revision="843ce7097112162c3290dd60b2518d3632aa4533" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" name="chromiumos/platform/cfm-device-monitor" path="src/platform/cfm-device-monitor" revision="92f7ff9d298eeb4c2244fd76799187915b4c6b5c" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" name="chromiumos/platform/cfm-device-monitor" path="src/platform/cfm-device-monitor" revision="de06a6fc4eb72f81a4451e28074025ba78a5260a" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/chameleon" path="src/platform/chameleon" revision="77f60a2142b47dfd4bc254ad97911fc5fcecc080" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/chromiumos-assets" path="src/platform/chromiumos-assets" revision="a5acfbd3dd6cab1b133d84080b22e7b8e6d0e199" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/cobble" path="src/platform/cobble" revision="4ab43f1f86b7099b8ad75cf9615ea1fa155bbd7d" upstream="refs/heads/master"/>
@@ -93,7 +93,7 @@
     <annotation name="branch-mode" value="pin"/>
   </project>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/experimental" path="src/platform/experimental" revision="2927fce20adf74b0c9a32a61e3edff894221f283" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" name="chromiumos/platform/factory" path="src/platform/factory" revision="d89e9efee9e4492c27b302575c8d7766d2599fbf" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" name="chromiumos/platform/factory" path="src/platform/factory" revision="34e80279a8bd0310a7da59d42c7ac482e0963466" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/factory_installer" path="src/platform/factory_installer" revision="b2320478715cf7dc46875759b65a4b892d4d2dc7" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" groups="firmware" name="chromiumos/platform/firmware" path="src/platform/firmware" revision="f78bae2a9abee97c1b366197ef61c6fe51661d94" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/frecon" path="src/platform/frecon" revision="f8f8e4610bf2a2eedfcbfe5254b26b813046c367" upstream="refs/heads/master"/>
