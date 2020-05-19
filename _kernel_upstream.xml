@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is the manifest file for the continuously rebased kerenl.
+    Kerenl/upsream will always point to the latest upstream RC,
+    and this manifest will be updated once rebased.-->
+<manifest>
+  <project path="src/third_party/kernel/upstream"
+           name="chromiumos/third_party/kernel"
+           revision="refs/heads/merge/continuous/chromeos-kernelupstream-5.7-rc5">
+    <!--This repo is only used in ToT for upstream development
+        syncing and will never be used in branches.  Pin to a
+        commit when branching to avoid creating a lot of unused branches.-->
+    <annotation name="branch-mode" value="pin" />
+  </project>
+</manifest>
