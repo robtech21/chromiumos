@@ -1,8 +1,10 @@
 *** note
-**IMPORTANT**: Changes to this repo must also be made in the private manifest
-repo <https://chrome-internal.googlesource.com/chromeos/manifest-internal>.
-Automated sync between manifest-internal and manifest is not yet set up.
-And, the changes must *also* be synced to the infra/config file
+**IMPORTANT**: Do *not* make changes to full.xml in this repo. This repo
+automatically syncs with the private manifest repo
+<https://chrome-internal.googlesource.com/chromeos/manifest-internal>. If you do
+not have access to the private repo, please ask a Googler to update the manifest
+on your behalf.
+The changes must be synced to the infra/config file
 chromeos\_repos.star. Without this, the repo will never be picked up by CQ.
 ***
 
