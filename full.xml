@@ -71,8 +71,11 @@
            remote="chromium" />
   <project path="src/platform/empty-project"
            name="chromiumos/infra/build/empty-project"
-           groups="minilayout,firmware">
-    <annotation name="branch-mode" value="tot" />
+           groups="minilayout,firmware"
+           revision="3a01873e59ec25ecb10d1b07ff9816e69f3bbfee">
+    <!-- This repo should never change, so pin to a commit rather than track
+         a branch.  This avoids having to hit the network all the time.  -->
+    <annotation name="branch-mode" value="pin" />
   </project>
   <project path="src/aosp/external/libchrome"
            name="aosp/platform/external/libchrome" />
