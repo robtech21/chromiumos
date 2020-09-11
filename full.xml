@@ -744,8 +744,11 @@
            groups="firmware,zephyr" />
 
   <project path="src/weave/libweave"
-           revision="refs/heads/master"
-           name="weave/libweave" />
+           name="weave/libweave">
+    <!-- This repo never changes anymore, so pin to a commit rather than track
+         a branch.  This avoids having to hit the network all the time.  -->
+    <annotation name="branch-mode" value="pin" />
+  </project>
 
   <!-- Chromium repositories.
     We try to check out repos under src/chromium/ using the same layout as a
