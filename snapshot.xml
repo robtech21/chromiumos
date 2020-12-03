@@ -59,11 +59,11 @@
   <project dest-branch="refs/heads/master" name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/infra/tnull" path="infra/tnull" revision="46a08bf1f6ddcfbb0b8a41fb11d905a2eb54e3e7" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="bfae4bfc108dd981bf3887b45cee10395253fe1d" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/main" name="chromiumos/manifest" path="manifest" revision="5a82dd069e17d738dc349ee4ea1598c3412f2c2f" upstream="refs/heads/main"/>
-  <project dest-branch="refs/heads/master" groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="6c78ead8289bdd7c3ccf03089128b325930d76d4" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="9b956afc9741823158ae49a1d2898f0a66ddbee3" sync-c="true" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/main" name="chromiumos/manifest" path="manifest" revision="92ced1ec959427a29cdeae1a4b96f5074f077a31" upstream="refs/heads/main"/>
+  <project dest-branch="refs/heads/master" groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="094c01a7d402a4b36ca61d7152ebb6ddc4cf8783" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="4039564c7b392ff52b65192c91f7dd13f65d30fb" sync-c="true" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="182558a9abf4f8f7b6d2d21989774ee1713f1679" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="b56e62ce199fe3ce04fa6ad3697419ab20865bb4" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="b56e62ce199fe3ce04fa6ad3697419ab20865bb4" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/assets" path="src/platform/assets" revision="a2fefb292cb235b05ae6cab20607393540e05b92" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/audiotest" path="src/platform/audiotest" revision="254f8cbe7baba9e9263a23901e7cf33314ff00dd" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/platform/bisect-kit" path="src/platform/bisect-kit" revision="b83535f0078de19b52d924993e87799fa67d4e63" upstream="refs/heads/master"/>
@@ -134,7 +134,7 @@
   <project dest-branch="refs/heads/master" name="chromiumos/platform/webplot" path="src/platform/webplot" revision="bbd5ea22ef9f8e109e363b26958d9a2fc8921f0f" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/main" name="chromiumos/platform/xorg-conf" path="src/platform/xorg-conf" revision="6e487792618cea2061cf7120fda3e9dc87123391" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/master" groups="firmware,zephyr" name="chromiumos/platform/zephyr-chrome" path="src/platform/zephyr-chrome" revision="eade38647670b728be39d8483f34ee16f4d754ec" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="crosvm" name="chromiumos/platform2" path="src/platform2" revision="be95589a9694aed66a48e263a51112300179dd9e" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" groups="crosvm" name="chromiumos/platform2" path="src/platform2" revision="70c69ea4ba1539e70e56362e5fa128393e63c99a" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/main" groups="partner-config" name="chromiumos/project" path="src/project_public" revision="35076ee1563f59dafc8222a554151fd3e1235cb5" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" groups="minilayout,firmware,buildtools,labtools,crosvm" name="chromiumos/repohooks" path="src/repohooks" revision="b04778ff2faa1ce23cac4d3e0e629157025514f0" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/Wi-FiTestSuite-Linux-DUT" path="src/third_party/Wi-FiTestSuite-Linux-DUT" revision="afe5b18c1b33f03169779851369c8c4ab0bb941d" upstream="refs/heads/master"/>
@@ -186,7 +186,7 @@
   <project dest-branch="refs/heads/chromeos-4.4" name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.4" revision="637748c0b790c22e8c337e1478314cf54e4348d9" upstream="refs/heads/chromeos-4.4"/>
   <project dest-branch="refs/heads/chromeos-4.14" name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.14" revision="7e0831baafdcc39de55364c69d4d11a08ee82747" upstream="refs/heads/chromeos-4.14"/>
   <project dest-branch="refs/heads/chromeos-4.14-gw" name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.14-gw" revision="ae936fb0e08c50119bc8581eee085bb896d8254c" upstream="refs/heads/chromeos-4.14-gw"/>
-  <project dest-branch="refs/heads/chromeos-4.19" name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19" revision="b8efefbc109834887b32d0f0736010a8dac8bb6f" upstream="refs/heads/chromeos-4.19"/>
+  <project dest-branch="refs/heads/chromeos-4.19" name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19" revision="905c234900a020dc47308e6c48bef47d2030430a" upstream="refs/heads/chromeos-4.19"/>
   <project dest-branch="refs/heads/chromeos-4.19-ht" name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-ht" revision="32c067a0e895f8d2e65c56ef4c43da87f00394dd" upstream="refs/heads/chromeos-4.19-ht"/>
   <project dest-branch="refs/heads/chromeos-4.19-lakitu" name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-lakitu" revision="213628d0affd8a1c62d33d0bf8ebe6ce523026f9" upstream="refs/heads/chromeos-4.19-lakitu"/>
   <project dest-branch="refs/heads/chromeos-4.19-manatee" name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-manatee" revision="7a693e957167215fab90a62bdc418cc2ab921074" upstream="refs/heads/chromeos-4.19-manatee"/>
@@ -210,7 +210,7 @@
   <project dest-branch="refs/heads/chromeos" name="chromiumos/third_party/libsigrokdecode" path="src/third_party/libsigrokdecode" revision="3279c2825684c7009775b731d0a9e37815778282" upstream="refs/heads/chromeos"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/libtextclassifier" path="src/third_party/libtextclassifier" revision="4c965f1c12b3c7a37f6126cef737a8fe33f4677c" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/libv4lplugins" path="src/third_party/libv4lplugins" revision="679c8ed2cda9048369264127d210a0c3eb64f500" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" name="chromiumos/third_party/linux-firmware" path="src/third_party/linux-firmware" revision="9a30288c95298c0791dbcb327d30eae80ef8cb09" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" name="chromiumos/third_party/linux-firmware" path="src/third_party/linux-firmware" revision="db121f67c1718f5a4304d8bc4d9a91c168948e03" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/logitech-updater" path="src/third_party/logitech-updater" revision="1d477d90d9b7b9308dbe57877b0f896a5034af1b" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/marvell" path="src/third_party/marvell" revision="854d5b47fe714bbf42dfb495b9af5f3893ca5530" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="872c4bcd27db7b7ca26abe9fc090ae26d502156f" upstream="refs/heads/master"/>
