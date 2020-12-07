@@ -22,7 +22,7 @@
   <project dest-branch="refs/heads/master" name="aosp/platform/system/libfmq" path="src/aosp/system/libfmq" revision="f0356097d584b884e24b67c789b4800ec6895bd2" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="aosp/platform/system/libhidl" path="src/aosp/system/libhidl" revision="83caf7c58917b971de049e882ec9b23816f12ca1" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="aosp/platform/system/logging" path="src/aosp/system/logging" revision="59f317632862d15b59278a0235eb901270c2889d" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" name="aosp/platform/system/update_engine" path="src/aosp/system/update_engine" revision="2379503a049c1584cdfcb339e89d496a794c2680" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" name="aosp/platform/system/update_engine" path="src/aosp/system/update_engine" revision="93eec4e0358fdc79ea9858cca76b740aa8ed86a8" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/main" name="apps/libapps" path="src/third_party/libapps" revision="e89837355feb216bb07229b03b4294219aef6532" upstream="refs/heads/main">
     <annotation name="branch-mode" value="pin"/>
   </project>
@@ -61,7 +61,7 @@
   <project dest-branch="refs/heads/master" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="bfae4bfc108dd981bf3887b45cee10395253fe1d" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/main" name="chromiumos/manifest" path="manifest" revision="731effd5ec6fb6d6e42ff1a7149c37e247524d3f" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/master" groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="ce1982b622d50510dc7e2dda112120c6e0fa021a" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="8aa3274fc7c1eb03a2aa69283c82398273f07f02" sync-c="true" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="2902f4a3ba4e7042dbd683f94f6b244dbad8ae07" sync-c="true" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="182558a9abf4f8f7b6d2d21989774ee1713f1679" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="63078f48772763b4ddecb0e28e03aab112352280" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" name="chromiumos/platform/assets" path="src/platform/assets" revision="a2fefb292cb235b05ae6cab20607393540e05b92" upstream="refs/heads/main"/>
@@ -144,7 +144,7 @@
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/arm-trusted-firmware" path="src/third_party/arm-trusted-firmware" revision="943aff0c16434d558d3e1f5744d6119b49970504" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/atheros" path="src/third_party/atheros" revision="0c04859d8d41e007399cecd2cb33fe0ccd756ba8" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/atrusctl" path="src/third_party/atrusctl" revision="208deab991d44b8ee7e44178523274c703a192da" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="buildtools,labtools,devserver" name="chromiumos/third_party/autotest" path="src/third_party/autotest/files" revision="884de08594cf4097900aecffb14d916d219c7599" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" groups="buildtools,labtools,devserver" name="chromiumos/third_party/autotest" path="src/third_party/autotest/files" revision="3942b9204ebcccb44f0401cf722675df32554cbb" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/aver-updater" path="src/third_party/aver-updater" revision="e85cc66627377ce57e341a202661ac9139544fd3" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/chromeos-5.54" name="chromiumos/third_party/bluez" path="src/third_party/bluez/current" revision="bbbf3cfc3e97361809d79278bab1429e53c88379" upstream="refs/heads/chromeos-5.54"/>
   <project dest-branch="refs/heads/chromeos-5.54" name="chromiumos/third_party/bluez" path="src/third_party/bluez/next" revision="bbbf3cfc3e97361809d79278bab1429e53c88379" upstream="refs/heads/chromeos-5.54"/>
@@ -168,7 +168,7 @@
   <project dest-branch="refs/heads/master" groups="firmware" name="chromiumos/third_party/em100" path="src/third_party/em100" revision="003ac42294cf5ba497860c3200e97262c151fab5" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/fastrpc" path="src/third_party/fastrpc" revision="c2d1cdc0fb781ee673077c5d4b243eb239c73bb5" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" groups="firmware" name="chromiumos/third_party/flashmap" path="src/third_party/flashmap" revision="2f7b2e16f588dde75a0c9c28175f16b8cb9e11dc" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="firmware" name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" revision="486aaf0f58fd7c802e6c2617b742d9161fdf9f7c" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" groups="firmware" name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" revision="44b05f3e3d009ade92d3c1636461293183bf5414" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/fwupd-1.4.5" name="chromiumos/third_party/fwupd" path="src/third_party/fwupd" revision="f6045f2e45790542866c8442d8ffe151618c5908" upstream="refs/heads/fwupd-1.4.5"/>
   <project dest-branch="refs/heads/master" groups="labtools" name="chromiumos/third_party/hdctools" path="src/third_party/hdctools" revision="dd7f911bb9051e615af7fcb71d921bd481f934fb" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant" revision="743c52e4f2ef77ccc765c6847f68d8fd857c4b2b" upstream="refs/heads/master"/>
