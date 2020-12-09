@@ -61,7 +61,7 @@
   <project dest-branch="refs/heads/master" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="bfae4bfc108dd981bf3887b45cee10395253fe1d" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/main" name="chromiumos/manifest" path="manifest" revision="57298471cacbbab52b9b4d1f0108e400e0d795db" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/master" groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="9c9ff63c488defa3471de3f5cd152f57b0729112" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="f97177f6b0de23ab2e6689f42ec9865fe8840821" sync-c="true" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="9be8e77b1b43d5af38b19fe3fcd7b709a25c4163" sync-c="true" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="0ae3a3f9c11498af1e2dd33f817cc2e485053b2b" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="dea4f9dd19e3afab812c19fb30bb0dc975f4d38c" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" name="chromiumos/platform/assets" path="src/platform/assets" revision="a2fefb292cb235b05ae6cab20607393540e05b92" upstream="refs/heads/main"/>
@@ -168,7 +168,7 @@
   <project dest-branch="refs/heads/master" groups="firmware" name="chromiumos/third_party/em100" path="src/third_party/em100" revision="003ac42294cf5ba497860c3200e97262c151fab5" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/fastrpc" path="src/third_party/fastrpc" revision="c2d1cdc0fb781ee673077c5d4b243eb239c73bb5" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" groups="firmware" name="chromiumos/third_party/flashmap" path="src/third_party/flashmap" revision="2f7b2e16f588dde75a0c9c28175f16b8cb9e11dc" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="firmware" name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" revision="99c62980fd4edf43f0de34058b239fd88f111447" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" groups="firmware" name="chromiumos/third_party/flashrom" path="src/third_party/flashrom" revision="58c3f38170c2aa8e66c3cb6aa3355a3d104f8046" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/fwupd-1.5.0" name="chromiumos/third_party/fwupd" path="src/third_party/fwupd" revision="37a9014743c9ca760b20c66b31ce3670a727694e" upstream="refs/heads/fwupd-1.5.0"/>
   <project dest-branch="refs/heads/main" groups="labtools" name="chromiumos/third_party/hdctools" path="src/third_party/hdctools" revision="f205b3e27237793929d069b1e54cab0afd4f37bd" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/hostap" path="src/third_party/wpa_supplicant" revision="743c52e4f2ef77ccc765c6847f68d8fd857c4b2b" upstream="refs/heads/master"/>
@@ -213,7 +213,7 @@
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/linux-firmware" path="src/third_party/linux-firmware" revision="81908afc6c6ab5e46a157e76b841bcd579d00328" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/logitech-updater" path="src/third_party/logitech-updater" revision="1d477d90d9b7b9308dbe57877b0f896a5034af1b" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromiumos/third_party/marvell" path="src/third_party/marvell" revision="854d5b47fe714bbf42dfb495b9af5f3893ca5530" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="d60930c0171501de6fd453101275bad133481e0a" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" name="chromiumos/third_party/mesa" path="src/third_party/mesa" revision="dec4d15e6773ff9fd6b6d71d8f393419ae556a94" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/chromeos-amd" name="chromiumos/third_party/mesa" path="src/third_party/mesa-amd" revision="64f8a86e5ea2f03905fbaa298be336ca2fd0820c" upstream="refs/heads/chromeos-amd"/>
   <project dest-branch="refs/heads/debian" name="chromiumos/third_party/mesa" path="src/third_party/mesa-debian" revision="c36b89b82bcd270e1f9ee7d0824c9e265a39e95b" upstream="refs/heads/debian"/>
   <project dest-branch="refs/heads/chromeos-freedreno" name="chromiumos/third_party/mesa" path="src/third_party/mesa-freedreno" revision="88061634c9f65f4c9496c59e446acf71b862da17" upstream="refs/heads/chromeos-freedreno"/>
@@ -255,7 +255,7 @@
   <project groups="buildtools,chromeos-admin,firmware,labtools,minilayout" name="infra/luci/client-py" path="chromite/third_party/swarming.client" remote="chromium" revision="34b20305c7a69eb89e1abd5e2a94708db999f0a9"/>
   <project name="linux-syscall-support" path="src/third_party/breakpad/src/third_party/lss" revision="fd00dbbd0c06a309c657d89e9430143b179ff6db"/>
   <project dest-branch="refs/heads/master" name="platform/external/bsdiff" path="src/aosp/external/bsdiff" remote="aosp" revision="0009ac8eeddfd5afd133627cf31d514239f9c0ae" upstream="refs/heads/master"/>
-  <project dest-branch="refs/heads/master" groups="crosvm" name="platform/external/minijail" path="src/aosp/external/minijail" remote="aosp" revision="0a5fe470e9f052f2082653da995080ded391683d" upstream="refs/heads/master"/>
+  <project dest-branch="refs/heads/master" groups="crosvm" name="platform/external/minijail" path="src/aosp/external/minijail" remote="aosp" revision="31adc6c9a4dbfd049a8648d1e09e2886e686034a" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="platform/external/puffin" path="src/aosp/external/puffin" remote="aosp" revision="523884305f84932508d476a1827a1ddce5bc8c3e" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/pie-release" name="platform/system/keymaster" path="src/aosp/system/keymaster" remote="aosp" revision="49dfc58d6c4c66f5d0b0d06f0161da4e602a1293" upstream="refs/heads/pie-release"/>
   <project name="toolchain/binutils" path="src/aosp/toolchain/binutils" remote="aosp" revision="cce69c1b1bfc46de5e1cdd4923f87215c0edb884"/>
