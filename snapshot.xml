@@ -31,7 +31,7 @@
   <project dest-branch="refs/heads/master" name="chromium/src/third_party/Python-Markdown" path="src/chromium/src/third_party/Python-Markdown" remote="chromium" revision="2bb7b23b6398f9e79bc2fa8c6bc64a3cf1613ebf" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/master" name="chromium/src/tools/md_browser" path="src/chromium/src/tools/md_browser" remote="chromium" revision="60141af3603925d99bf3fb22fdfca138416339b1" upstream="refs/heads/master"/>
   <project groups="minilayout,firmware,buildtools,labtools" name="chromium/tools/depot_tools" path="src/chromium/depot_tools" remote="chromium" revision="fd5c198347e13bdb96f6685fdab451c1183e21ff"/>
-  <project dest-branch="refs/heads/master" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver,crosvm" name="chromiumos/chromite" path="chromite" revision="57f7f67b88efc30533b95c51bfecd390993db444" upstream="refs/heads/master">
+  <project dest-branch="refs/heads/master" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver,crosvm" name="chromiumos/chromite" path="chromite" revision="04314b1d8edbf792cbed36c08c9ca0ee16aa0c88" upstream="refs/heads/master">
     <copyfile dest="AUTHORS" src="AUTHORS"/>
     <copyfile dest="LICENSE" src="LICENSE"/>
   </project>
@@ -60,8 +60,8 @@
   <project dest-branch="refs/heads/master" name="chromiumos/infra/tnull" path="infra/tnull" revision="cd73092111d0cc708e5957759bc75afb702fdd3c" upstream="refs/heads/master"/>
   <project dest-branch="refs/heads/main" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver" name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="bfae4bfc108dd981bf3887b45cee10395253fe1d" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" name="chromiumos/manifest" path="manifest" revision="35abd508140082bdb63b04391e039cc4125b8c03" upstream="refs/heads/main"/>
-  <project dest-branch="refs/heads/main" groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="c0756ed0b78e3bde5053102556f4049703a254b9" upstream="refs/heads/main"/>
-  <project dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="8418dd0c12191cbfa51ac6badc7469892afafe7a" sync-c="true" upstream="refs/heads/main"/>
+  <project dest-branch="refs/heads/main" groups="minilayout,firmware" name="chromiumos/overlays/board-overlays" path="src/overlays" revision="75148da223cc0827b3c145fbcf4ffe2910f42edf" upstream="refs/heads/main"/>
+  <project dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="63f390959eb7f27f79199cc2b318bbe17bdc84be" sync-c="true" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="9002217060b06cc1b589606cae852e949a62af84" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="717e1b3dd4163e6bb696f816ccb6cc70b3767c91" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" name="chromiumos/platform/assets" path="src/platform/assets" revision="fc499a80d7eb7689a45328c4e660e731ce76fac0" upstream="refs/heads/main"/>
@@ -81,7 +81,7 @@
   <project dest-branch="refs/heads/main" groups="minilayout,firmware,buildtools,devserver" name="chromiumos/platform/dev-util" path="src/platform/dev" revision="807aaaca839c414a095ec26486ef15061ab2f081" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" name="chromiumos/platform/drm-tests" path="src/platform/drm-tests" revision="032a955025009c7cf7726a87b67ec544a8efb46c" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/cr50_stab" groups="firmware" name="chromiumos/platform/ec" path="src/platform/cr50" revision="4fba21dd08bc68646ad1b38ab17ec71f6610142a" upstream="refs/heads/cr50_stab"/>
-  <project dest-branch="refs/heads/main" groups="firmware" name="chromiumos/platform/ec" path="src/platform/ec" revision="b6a38f0f5cd52150a89d3d8e0ada3789d07f559e" upstream="refs/heads/main"/>
+  <project dest-branch="refs/heads/main" groups="firmware" name="chromiumos/platform/ec" path="src/platform/ec" revision="749330ad548119c6235cb5868c2ea0f096ea22d5" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/firmware-fpmcu-bloonchipper-release" groups="firmware" name="chromiumos/platform/ec" path="src/platform/release-firmware/fpmcu-bloonchipper" revision="197506c10838f9fad2cf9f74dd11e5ddac4cb2cc" upstream="refs/heads/firmware-fpmcu-bloonchipper-release">
     <annotation name="branch-mode" value="pin"/>
   </project>
@@ -118,7 +118,7 @@
   <project dest-branch="refs/heads/main" groups="notdefault,moblab" name="chromiumos/platform/moblab" path="src/platform/moblab" revision="f44cd6cb2d8b78ea323625dd93b1611f3e00560d" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" name="chromiumos/platform/mosys" path="src/platform/mosys" revision="358a7126097e7e6ddb6d2ead7f880fc3e6ded754" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" name="chromiumos/platform/mttools" path="src/platform/mttools" revision="44b2e16939185c9a3ecca057eeccc2f4c47a6481" upstream="refs/heads/main"/>
-  <project dest-branch="refs/heads/main" name="chromiumos/platform/tast" path="src/platform/tast" revision="d3b6b81d44ffea5a78e5c7b5ba3df20ba856d865" upstream="refs/heads/main"/>
+  <project dest-branch="refs/heads/main" name="chromiumos/platform/tast" path="src/platform/tast" revision="1d3fa36525f612635874b7d37f1424b79d5025ca" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" name="chromiumos/platform/tast-tests" path="src/platform/tast-tests" revision="f4fb75ce7da15c40ba46ebe17baaa3d3de9d4477" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" groups="firmware" name="chromiumos/platform/touch_firmware_test" path="src/platform/touch_firmware_test" revision="ac7cbcdcf6596b06484d39c891d820c65c69736d" upstream="refs/heads/main"/>
   <project dest-branch="refs/heads/main" name="chromiumos/platform/touch_updater" path="src/platform/touch_updater" revision="5a9747158fcff525de22173316d10068dea71155" upstream="refs/heads/main"/>
