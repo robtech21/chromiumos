@@ -352,7 +352,11 @@
            revision="refs/heads/chromeos-5.54" />
   <project path="src/third_party/bluez/upstream"
            name="chromiumos/third_party/bluez"
-           revision="refs/heads/upstream/master" />
+           revision="refs/heads/upstream/master">
+    <!-- This repo is only to be synced with BlueZ upstream and there are no
+         changes from Chromium OS. -->
+    <annotation name="branch-mode" value="pin" />
+  </project>
   <project path="src/third_party/bootstub"
            name="chromiumos/third_party/bootstub"
            groups="firmware" />
