@@ -369,6 +369,15 @@
   <project path="src/third_party/breakpad/src/third_party/lss"
            name="linux-syscall-support"
            revision="fd00dbbd0c06a309c657d89e9430143b179ff6db" />
+  <project path="src/aosp/system/bt/upstream"
+           name="aosp/platform/system/bt"
+           groups="notdefault,bluetooth">
+    <annotation name="branch-mode" value="pin" />
+  </project>
+  <project path="src/aosp/system/bt/bringup"
+           name="aosp/platform/system/bt"
+           revision="refs/heads/bringup"
+           groups="notdefault,bluetooth" />
   <project path="src/third_party/cbootimage"
            name="chromiumos/third_party/cbootimage"
            revision="refs/heads/master"
