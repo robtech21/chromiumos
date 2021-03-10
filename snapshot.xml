@@ -72,7 +72,7 @@
   <project name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="48bf42ed7596c2f04eb0eaab501a3722c80d9b01" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver"/>
   <project name="chromiumos/manifest" path="manifest" revision="027c84d254f0b99439e28a0dd1c400c603345f3e" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/overlays/board-overlays" path="src/overlays" revision="a979e9bbe491527f13acfd34fa4be9be6099e908" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware"/>
-  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="e7045acd315ef00118856e61ae48da1fdfbe286d" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" sync-c="true"/>
+  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="9717461752aa26b7efa28d5a102a36d51b40d1e1" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" sync-c="true"/>
   <project name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="d5b4143712db415253e4eddb49bf16f13c81062f" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools"/>
   <project name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="431212c500b1fb66155be0335ca25fff05de19fd" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="e4767465f062ed829c99704d5511ab14ce6159be" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
@@ -93,7 +93,7 @@
   <project name="chromiumos/platform/dev-util" path="src/platform/dev" revision="9a52adac2097aadbabdf60b9466106150dab18a7" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,buildtools,devserver"/>
   <project name="chromiumos/platform/drm-tests" path="src/platform/drm-tests" revision="dc8f92a54ad1fe410ff80b0afc126b8570569f85" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/ec" path="src/platform/cr50" revision="e68e10cfd0c5417bf1719cb3690d17fca12f3a65" upstream="refs/heads/cr50_stab" dest-branch="refs/heads/cr50_stab" groups="firmware"/>
-  <project name="chromiumos/platform/ec" path="src/platform/ec" revision="3b2d03c081a583a639bb17e73250f86b1e5732f0" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="firmware"/>
+  <project name="chromiumos/platform/ec" path="src/platform/ec" revision="5e8fa55cd5705a0d76f41c51d05fc175512c226a" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="firmware"/>
   <project name="chromiumos/platform/ec" path="src/platform/release-firmware/fpmcu-bloonchipper" revision="3dfc5ff6dfecf928b858276be5de76d21307418c" upstream="refs/heads/firmware-fpmcu-bloonchipper-release" dest-branch="refs/heads/firmware-fpmcu-bloonchipper-release" groups="firmware">
     <annotation name="branch-mode" value="pin"/>
   </project>
@@ -130,7 +130,7 @@
   <project name="chromiumos/platform/mosys" path="src/platform/mosys" revision="1935f75b132ca9885e912b11b8f4e99ca46e3321" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/mttools" path="src/platform/mttools" revision="f0bf33d8a85c6a9766fb38d0f3b90ebe05ace376" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/tast" path="src/platform/tast" revision="a46e5a35b5e3c75bb56a52488e7a46f1a29f35a4" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
-  <project name="chromiumos/platform/tast-tests" path="src/platform/tast-tests" revision="c81f84590529e1268b98b1c749ccad07a23092eb" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
+  <project name="chromiumos/platform/tast-tests" path="src/platform/tast-tests" revision="ed2b8c725eb7cf34924f89f8ccde01b2fb10b984" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/touch_firmware_test" path="src/platform/touch_firmware_test" revision="ac7cbcdcf6596b06484d39c891d820c65c69736d" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="firmware"/>
   <project name="chromiumos/platform/touch_updater" path="src/platform/touch_updater" revision="85493d751a0a0b71cb7396ec5f412a8e0adc30a6" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/touchpad-tests" path="src/platform/touchpad-tests" revision="d289d9fdb0aceb7c6f753806871f68d19211d9af" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
@@ -145,7 +145,7 @@
   <project name="chromiumos/platform/webplot" path="src/platform/webplot" revision="bbd5ea22ef9f8e109e363b26958d9a2fc8921f0f" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/xorg-conf" path="src/platform/xorg-conf" revision="8310071cd3fad7168c2a7d34626626ede38fd55a" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/zephyr-chrome" path="src/platform/zephyr-chrome" revision="58c95c2bf0654185a81a557a3286682403b6ad5b" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="firmware,zephyr"/>
-  <project name="chromiumos/platform2" path="src/platform2" revision="5f03ce3f3c6b0d190484354cce47934ced7c22ed" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="crosvm"/>
+  <project name="chromiumos/platform2" path="src/platform2" revision="28bbd345f67c61842e94818c33349bc05183b8e0" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="crosvm"/>
   <project name="chromiumos/project" path="src/project_public" revision="f14d4cc4b60ec738c2e905e3bb7b3593bf1d510a" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="partner-config"/>
   <project name="chromiumos/repohooks" path="src/repohooks" revision="062a0a96e44e52f3901d3fcbace9e0f842c461be" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,buildtools,labtools,crosvm"/>
   <project name="chromiumos/third_party/Wi-FiTestSuite-Linux-DUT" path="src/third_party/Wi-FiTestSuite-Linux-DUT" revision="afe5b18c1b33f03169779851369c8c4ab0bb941d" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
