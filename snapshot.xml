@@ -67,15 +67,15 @@
   <project name="chromiumos/infra/recipes" path="infra/recipes" revision="0faa1c3a8b3dad52bd012f16df256dfa9be7479a" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="chromeos-admin">
     <annotation name="branch-mode" value="tot"/>
   </project>
-  <project name="chromiumos/infra/suite_scheduler" path="infra/suite_scheduler" revision="4a824132fce43bd7c9933113621491da6f24698c" upstream="refs/heads/main" dest-branch="refs/heads/main">
+  <project name="chromiumos/infra/suite_scheduler" path="infra/suite_scheduler" revision="d330a2d9906af3c742b2f526bd956457b4581fd6" upstream="refs/heads/main" dest-branch="refs/heads/main">
     <annotation name="branch-mode" value="tot"/>
   </project>
   <project name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/infra/tnull" path="infra/tnull" revision="cd73092111d0cc708e5957759bc75afb702fdd3c" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="cab8a95f2961561eb56a95d6f2bfc685686db75a" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver"/>
   <project name="chromiumos/manifest" path="manifest" revision="a299a326a845c153ea77bb3d2d30b154bd7939de" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
-  <project name="chromiumos/overlays/board-overlays" path="src/overlays" revision="5e7686e0125e0dc45cddb7059ca188c86ded1c14" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware"/>
-  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="9d0955cecb56fe4c36c1a9c2e95671e7e646dcd5" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" sync-c="true"/>
+  <project name="chromiumos/overlays/board-overlays" path="src/overlays" revision="f4841c894ce92f50e856e26256a1f734d076ac39" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware"/>
+  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="82459011447b28c947563ad06bd018842cedbc2c" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" sync-c="true"/>
   <project name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="8e81b6a7f32610579063004613c64fbd5e5d3f4d" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools"/>
   <project name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="3f2c18925303c0d16a8f9dfb7133623fb90a6a31" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="263e788d0bafc30b06ed78befe90dbe27daddd14" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
@@ -151,7 +151,7 @@
   <project name="chromiumos/project" path="src/project_public" revision="88db51e3b3bd272d7679eb1552176d0d7881452f" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="partner-config"/>
   <project name="chromiumos/repohooks" path="src/repohooks" revision="00c74ba0feedd019af7be3dd0287542e051ad614" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,buildtools,labtools,crosvm"/>
   <project name="chromiumos/third_party/Wi-FiTestSuite-Linux-DUT" path="src/third_party/Wi-FiTestSuite-Linux-DUT" revision="afe5b18c1b33f03169779851369c8c4ab0bb941d" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
-  <project name="chromiumos/third_party/adhd" path="src/third_party/adhd" revision="1d338bd560bb99b81e5731a8b050a8b433a1b8f7" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="crosvm"/>
+  <project name="chromiumos/third_party/adhd" path="src/third_party/adhd" revision="6b7b477025362eaf7fdd5a739d1643b977ddb8a5" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="crosvm"/>
   <project name="chromiumos/third_party/apitrace" path="src/third_party/apitrace" revision="34921b26ab9eb6b05bdc1ea57c31acaaaac99c12" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
   <project name="chromiumos/third_party/apitrace" path="src/third_party/apitrace-debian" revision="989c29adcfdbc48ee95fe41475bc667a5c77292e" upstream="refs/heads/debian" dest-branch="refs/heads/debian" groups="notdefault,crostini"/>
   <project name="chromiumos/third_party/arm-trusted-firmware" path="src/third_party/arm-trusted-firmware" revision="2c62b00e8c4b327165a4bfd874714aa460f3e176" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
@@ -200,7 +200,7 @@
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-ht" revision="32c067a0e895f8d2e65c56ef4c43da87f00394dd" upstream="refs/heads/chromeos-4.19-ht" dest-branch="refs/heads/chromeos-4.19-ht"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-lakitu" revision="213628d0affd8a1c62d33d0bf8ebe6ce523026f9" upstream="refs/heads/chromeos-4.19-lakitu" dest-branch="refs/heads/chromeos-4.19-lakitu"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v4.19-manatee" revision="7a693e957167215fab90a62bdc418cc2ab921074" upstream="refs/heads/chromeos-4.19-manatee" dest-branch="refs/heads/chromeos-4.19-manatee"/>
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4" revision="77bc192c026911d164feba4b89f88e9cba14b508" upstream="refs/heads/chromeos-5.4" dest-branch="refs/heads/chromeos-5.4"/>
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4" revision="f624569d4d1903aac530f1abd6e1f50f08a3cf4e" upstream="refs/heads/chromeos-5.4" dest-branch="refs/heads/chromeos-5.4"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4-manatee" revision="12854f89b80b4a30759735d82374261f847cb3e5" upstream="refs/heads/chromeos-5.4-manatee" dest-branch="refs/heads/chromeos-5.4-manatee"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4-arcvm" revision="3f5e7b5cba1430eef2a7d22236de4df678afb804" upstream="refs/heads/chromeos-5.4-arcvm" dest-branch="refs/heads/chromeos-5.4-arcvm"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.10" revision="a5966bd58466c4292297c81d75bcbb3a9e690474" upstream="refs/heads/chromeos-5.10" dest-branch="refs/heads/chromeos-5.10"/>
@@ -273,7 +273,7 @@
   <project name="linux-syscall-support" path="src/third_party/breakpad/src/third_party/lss" revision="fd00dbbd0c06a309c657d89e9430143b179ff6db"/>
   <project name="platform/external/bsdiff" path="src/aosp/external/bsdiff" remote="aosp" revision="be81a990b3e1b1827602cf0fd23c5b55dce3a4de" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
   <project name="platform/external/minijail" path="src/aosp/external/minijail" remote="aosp" revision="1403606682541761bc74399e798e912969c7c886" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="crosvm"/>
-  <project name="platform/external/perfetto" path="src/aosp/external/perfetto" remote="aosp" revision="d6d623f6f561400e8263d41a8c659766909cb5b5" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="notdefault"/>
+  <project name="platform/external/perfetto" path="src/aosp/external/perfetto" remote="aosp" revision="fbdc6a92e30115422deae705d70f0a5fc91ef6d1" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="notdefault"/>
   <project name="platform/external/puffin" path="src/aosp/external/puffin" remote="aosp" revision="d51726bde3cac59456126b86eb52d43035e4b245" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
   <project name="platform/system/keymaster" path="src/aosp/system/keymaster" remote="aosp" revision="49dfc58d6c4c66f5d0b0d06f0161da4e602a1293" upstream="refs/heads/pie-release" dest-branch="refs/heads/pie-release"/>
   <project name="weave/libweave" path="src/weave/libweave" revision="bf5379935ba14d3ab0538ac77c69011d1b34de12" upstream="refs/heads/main" dest-branch="refs/heads/main">
