@@ -70,15 +70,15 @@
   <project name="chromiumos/infra/recipes" path="infra/recipes" revision="e343235cb8f2a8a346b3ef41d6a8aad5918c31be" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="chromeos-admin">
     <annotation name="branch-mode" value="tot"/>
   </project>
-  <project name="chromiumos/infra/suite_scheduler" path="infra/suite_scheduler" revision="3ef0bd5963bf7fe0e9819cbe5af4534ce47b85f5" upstream="refs/heads/main" dest-branch="refs/heads/main">
+  <project name="chromiumos/infra/suite_scheduler" path="infra/suite_scheduler" revision="fbb9848050aa3fd7556b77b33fd814fd282794b3" upstream="refs/heads/main" dest-branch="refs/heads/main">
     <annotation name="branch-mode" value="tot"/>
   </project>
   <project name="chromiumos/infra/test_analyzer" path="infra/test_analyzer" revision="14119cc21c146544791fe387f64a4b809c4ea789" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/infra/tnull" path="infra/tnull" revision="cd73092111d0cc708e5957759bc75afb702fdd3c" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="cab8a95f2961561eb56a95d6f2bfc685686db75a" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver"/>
   <project name="chromiumos/manifest" path="manifest" revision="7536f599abc07ae23f70f0809a8e320f04ca70d4" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
-  <project name="chromiumos/overlays/board-overlays" path="src/overlays" revision="8ed5e613f8bff0d61cf413adfa5c49df42f9590c" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware"/>
-  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="c603ba4cfa43e1cb2081169eaabc63e369bed14c" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" sync-c="true"/>
+  <project name="chromiumos/overlays/board-overlays" path="src/overlays" revision="72d06aaa76aa4c7987287bb998d1aef0ae2b3cdb" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware"/>
+  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="2216df924b1da49588a35be3e6c8ded666bdc5f6" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" sync-c="true"/>
   <project name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="89eada2dbe5cc72dfff8d98697b8e38a9186c373" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools"/>
   <project name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="6f15ba5463b516a8516a3faf8884cd4e0ab6f9a6" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="263e788d0bafc30b06ed78befe90dbe27daddd14" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
@@ -168,7 +168,7 @@
   </project>
   <project name="chromiumos/third_party/bootstub" path="src/third_party/bootstub" revision="076cb8e624d2f9d8ab75fc07f614e3c1288e0b2e" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="firmware"/>
   <project name="chromiumos/third_party/cbootimage" path="src/third_party/cbootimage" revision="b7d5b2d6a6dd05874d86ee900ff441d261f9034c" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="firmware"/>
-  <project name="chromiumos/third_party/coreboot" path="src/third_party/coreboot" revision="56779abd67462f3f2c234038e37a80dc4343c14a" upstream="refs/heads/chromeos-2016.05" dest-branch="refs/heads/chromeos-2016.05" groups="firmware"/>
+  <project name="chromiumos/third_party/coreboot" path="src/third_party/coreboot" revision="5d4b101e3d2f7eda96f32e45a97b7430cbce125a" upstream="refs/heads/chromeos-2016.05" dest-branch="refs/heads/chromeos-2016.05" groups="firmware"/>
   <project name="chromiumos/third_party/coreboot/amd_blobs" path="src/third_party/coreboot/3rdparty/amd_blobs" revision="7874c7d3cebc0ebca57875e24911ddd55aec9711" upstream="refs/heads/chromeos" dest-branch="refs/heads/chromeos" groups="firmware"/>
   <project name="chromiumos/third_party/coreboot/blobs" path="src/third_party/coreboot/3rdparty/blobs" revision="5efb89b0560b2828b8b84acd94561d01475afee2" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="firmware"/>
   <project name="chromiumos/third_party/coreboot/intel-microcode" path="src/third_party/coreboot/3rdparty/intel-microcode" revision="ee319ae7bc59e88b60142f40a9ec1b46656de4db" upstream="refs/heads/master" dest-branch="refs/heads/master" groups="firmware"/>
@@ -206,7 +206,7 @@
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4" revision="9cc4985a44f0ebc126835793bd115ca793024c9d" upstream="refs/heads/chromeos-5.4" dest-branch="refs/heads/chromeos-5.4"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4-manatee" revision="12854f89b80b4a30759735d82374261f847cb3e5" upstream="refs/heads/chromeos-5.4-manatee" dest-branch="refs/heads/chromeos-5.4-manatee"/>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.4-arcvm" revision="d3a519f26e224b9f49edd21197b749429f57bfca" upstream="refs/heads/chromeos-5.4-arcvm" dest-branch="refs/heads/chromeos-5.4-arcvm"/>
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.10" revision="a75efb29c70ec7447c08c42e08158bbf9c41c291" upstream="refs/heads/chromeos-5.10" dest-branch="refs/heads/chromeos-5.10"/>
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v5.10" revision="0ff7ae41ab31bb60aea8f12dd22032d049ca9b7e" upstream="refs/heads/chromeos-5.10" dest-branch="refs/heads/chromeos-5.10"/>
   <project name="chromiumos/third_party/kernel-next" path="src/third_party/kernel/next" revision="46a7c1e64cf1e7c62dba19055b2fdf63defb856c" upstream="refs/heads/chromeos-next" dest-branch="refs/heads/chromeos-next" groups="notdefault,kernel-next">
     <annotation name="branch-mode" value="tot"/>
   </project>
