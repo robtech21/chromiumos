@@ -92,58 +92,6 @@
          a branch.  This avoids having to hit the network all the time. -->
     <annotation name="branch-mode" value="pin" />
   </project>
-  <project path="src/aosp/external/libchrome"
-           name="aosp/platform/external/libchrome"
-           revision="refs/heads/master" />
-  <project path="src/aosp/external/libutf"
-           name="aosp/platform/external/libutf"
-           revision="refs/heads/master" />
-  <project path="src/aosp/external/minijail"
-           remote="aosp"
-           name="platform/external/minijail"
-           revision="refs/heads/master"
-           groups="crosvm" />
-  <project path="src/aosp/frameworks/ml"
-           name="aosp/platform/frameworks/ml" />
-  <project path="src/aosp/frameworks/native"
-           name="aosp/platform/frameworks/native"
-           revision="refs/heads/master" />
-  <project path="src/aosp/hardware/interfaces/neuralnetworks"
-           name="aosp/platform/hardware/interfaces/neuralnetworks"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/core/base"
-           name="aosp/platform/system/core/base"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/core/libbacktrace"
-           name="aosp/platform/system/core/libbacktrace"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/core/libcutils"
-           name="aosp/platform/system/core/libcutils"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/core/liblog"
-           name="aosp/platform/system/core/liblog"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/core/libutils"
-           name="aosp/platform/system/core/libutils"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/libbase"
-           name="aosp/platform/system/libbase"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/libfmq"
-           name="aosp/platform/system/libfmq"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/libhidl"
-           name="aosp/platform/system/libhidl"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/libsync"
-           name="aosp/platform/system/core/libsync"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/logging"
-           name="aosp/platform/system/logging"
-           revision="refs/heads/master" />
-  <project path="src/aosp/system/update_engine"
-           name="aosp/platform/system/update_engine"
-           revision="refs/heads/master" />
   <project path="src/overlays"
            name="chromiumos/overlays/board-overlays"
            groups="minilayout,firmware" />
@@ -391,21 +339,6 @@
   <project path="src/third_party/breakpad/src/third_party/lss"
            name="linux-syscall-support"
            revision="e1e7b0ad8ee99a875b272c8e33e308472e897660" />
-  <project path="src/aosp/system/bt/upstream"
-           name="aosp/platform/system/bt"
-           groups="notdefault,bluetooth">
-    <annotation name="branch-mode" value="pin" />
-  </project>
-  <project path="src/aosp/system/bt/bringup"
-           name="aosp/platform/system/bt"
-           revision="refs/heads/bringup"
-           groups="notdefault,bluetooth" />
-  <project path="src/aosp/frameworks/proto_logging"
-           name="aosp/platform/frameworks/proto_logging"
-           revision="refs/heads/master"
-           groups="notdefault,bluetooth">
-    <annotation name="branch-mode" value="pin" />
-  </project>
   <project path="src/third_party/cbootimage"
            name="chromiumos/third_party/cbootimage"
            revision="refs/heads/master"
@@ -811,6 +744,17 @@
            remote="aosp"
            name="platform/external/bsdiff"
            revision="refs/heads/master" />
+  <project path="src/aosp/external/libchrome"
+           name="aosp/platform/external/libchrome"
+           revision="refs/heads/master" />
+  <project path="src/aosp/external/libutf"
+           name="aosp/platform/external/libutf"
+           revision="refs/heads/master" />
+  <project path="src/aosp/external/minijail"
+           remote="aosp"
+           name="platform/external/minijail"
+           revision="refs/heads/master"
+           groups="crosvm" />
   <project path="src/aosp/external/perfetto"
            remote="aosp"
            name="platform/external/perfetto"
@@ -820,10 +764,66 @@
            remote="aosp"
            name="platform/external/puffin"
            revision="refs/heads/master" />
+  <project path="src/aosp/frameworks/ml"
+           name="aosp/platform/frameworks/ml" />
+  <project path="src/aosp/frameworks/native"
+           name="aosp/platform/frameworks/native"
+           revision="refs/heads/master" />
+  <project path="src/aosp/frameworks/proto_logging"
+           name="aosp/platform/frameworks/proto_logging"
+           revision="refs/heads/master"
+           groups="notdefault,bluetooth">
+    <annotation name="branch-mode" value="pin" />
+  </project>
+  <project path="src/aosp/hardware/interfaces/neuralnetworks"
+           name="aosp/platform/hardware/interfaces/neuralnetworks"
+           revision="refs/heads/master" />
+  <project path="src/aosp/system/bt/bringup"
+           name="aosp/platform/system/bt"
+           revision="refs/heads/bringup"
+           groups="notdefault,bluetooth" />
+  <project path="src/aosp/system/bt/upstream"
+           name="aosp/platform/system/bt"
+           groups="notdefault,bluetooth">
+    <annotation name="branch-mode" value="pin" />
+  </project>
+  <project path="src/aosp/system/core/base"
+           name="aosp/platform/system/core/base"
+           revision="refs/heads/master" />
+  <project path="src/aosp/system/core/libbacktrace"
+           name="aosp/platform/system/core/libbacktrace"
+           revision="refs/heads/master" />
+  <project path="src/aosp/system/core/libcutils"
+           name="aosp/platform/system/core/libcutils"
+           revision="refs/heads/master" />
+  <project path="src/aosp/system/core/liblog"
+           name="aosp/platform/system/core/liblog"
+           revision="refs/heads/master" />
+  <project path="src/aosp/system/core/libutils"
+           name="aosp/platform/system/core/libutils"
+           revision="refs/heads/master" />
   <project path="src/aosp/system/keymaster"
            remote="aosp"
            name="platform/system/keymaster"
            revision="refs/heads/pie-release" />
+  <project path="src/aosp/system/libbase"
+           name="aosp/platform/system/libbase"
+           revision="refs/heads/master" />
+  <project path="src/aosp/system/libfmq"
+           name="aosp/platform/system/libfmq"
+           revision="refs/heads/master" />
+  <project path="src/aosp/system/libhidl"
+           name="aosp/platform/system/libhidl"
+           revision="refs/heads/master" />
+  <project path="src/aosp/system/libsync"
+           name="aosp/platform/system/core/libsync"
+           revision="refs/heads/master" />
+  <project path="src/aosp/system/logging"
+           name="aosp/platform/system/logging"
+           revision="refs/heads/master" />
+  <project path="src/aosp/system/update_engine"
+           name="aosp/platform/system/update_engine"
+           revision="refs/heads/master" />
 
   <!-- Manifests are not standard projects. -->
   <project path="manifest"
