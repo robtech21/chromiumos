@@ -95,11 +95,14 @@
   <project path="src/overlays"
            name="chromiumos/overlays/board-overlays"
            groups="minilayout,firmware" />
+  <project path="src/scripts"
+           name="chromiumos/platform/crosutils"
+           groups="minilayout,firmware,buildtools,labtools" />
+
+  <!-- Platform projects. -->
   <project path="src/platform2"
            name="chromiumos/platform2"
            groups="crosvm" />
-  <project path="src/platform/experimental"
-           name="chromiumos/platform/experimental" />
   <project path="src/platform/assets"
            name="chromiumos/platform/assets" />
   <project path="src/platform/audiotest"
@@ -128,13 +131,6 @@
            name="chromiumos/platform/ec"
            revision="refs/heads/cr50_stab"
            groups="firmware" />
-  <project path="src/platform/pinweaver"
-           name="chromiumos/platform/pinweaver" />
-  <project path="src/third_party/rust_crates"
-           name="chromiumos/third_party/rust_crates"
-           groups="notdefault,bluetooth">
-    <annotation name="branch-mode" value="pin" />
-  </project>
   <project path="src/platform/crostestutils"
            name="chromiumos/platform/crostestutils"
            groups="minilayout,firmware,buildtools" />
@@ -152,6 +148,8 @@
   <project path="src/platform/ec"
            name="chromiumos/platform/ec"
            groups="firmware" />
+  <project path="src/platform/experimental"
+           name="chromiumos/platform/experimental" />
   <project path="src/platform/factory"
            name="chromiumos/platform/factory" />
   <project path="src/platform/factory_installer"
@@ -208,13 +206,9 @@
            name="chromiumos/platform/mosys" />
   <project path="src/platform/mttools"
            name="chromiumos/platform/mttools" />
-  <project path="src/platform/satlab"
-           name="chromiumos/platform/satlab"
-           groups="notdefault,satlab" />
-  <project path="src/platform/xolabs-common-core"
-           name="chromiumos/platform/xolabs-common-core"
-           groups="notdefault,xolabs" />
-  <!-- Begin: EC-based release firmware.
+  <project path="src/platform/pinweaver"
+           name="chromiumos/platform/pinweaver" />
+  <!-- EC-based release firmware.
        See http://go/cros-fingerprint-firmware-branching-and-signing -->
   <project path="src/platform/release-firmware/fpmcu-bloonchipper"
            name="chromiumos/platform/ec"
@@ -244,7 +238,9 @@
            groups="firmware">
     <annotation name="branch-mode" value="pin" />
   </project>
-  <!-- End: EC-based release firmware -->
+  <project path="src/platform/satlab"
+           name="chromiumos/platform/satlab"
+           groups="notdefault,satlab" />
   <project path="src/platform/tast"
            name="chromiumos/platform/tast" />
   <project path="src/platform/tast-tests"
@@ -254,17 +250,17 @@
            groups="buildtools,labtools,devserver,firmware" />
   <project path="src/platform/tauto"
            name="chromiumos/platform/tauto" />
-  <project path="src/platform/tremplin"
-           name="chromiumos/platform/tremplin" />
-  <project path="src/platform/touch_updater"
-           name="chromiumos/platform/touch_updater" />
   <project path="src/platform/touch_firmware_test"
            name="chromiumos/platform/touch_firmware_test"
            groups="firmware" />
+  <project path="src/platform/touch_updater"
+           name="chromiumos/platform/touch_updater" />
   <project path="src/platform/touchpad-tests"
            name="chromiumos/platform/touchpad-tests" />
   <project path="src/platform/tpm_lite"
            name="chromiumos/platform/tpm_lite" />
+  <project path="src/platform/tremplin"
+           name="chromiumos/platform/tremplin" />
   <project path="src/platform/usi-test"
            name="chromiumos/platform/usi-test" />
   <project path="src/platform/vboot_reference"
@@ -274,18 +270,20 @@
            name="chromiumos/platform/vkbench" />
   <project path="src/platform/vpd"
            name="chromiumos/platform/vpd" />
+  <project path="src/platform/xolabs-common-core"
+           name="chromiumos/platform/xolabs-common-core"
+           groups="notdefault,xolabs" />
   <project path="src/platform/xorg-conf"
            name="chromiumos/platform/xorg-conf" />
-  <project path="src/scripts"
-           name="chromiumos/platform/crosutils"
-           groups="minilayout,firmware,buildtools,labtools" />
 
+  <!-- Third party projects. -->
   <project path="src/third_party/adhd"
            name="chromiumos/third_party/adhd"
            groups="crosvm" />
-  <project path="src/third_party/arm-trusted-firmware"
-           name="chromiumos/third_party/arm-trusted-firmware"
-           revision="refs/heads/master" />
+  <project path="src/third_party/amd-firmware/binarypi/picasso-edk2"
+           name="chromiumos/third_party/edk2"
+           revision="refs/heads/pco"
+           groups="firmware" />
   <project path="src/third_party/apitrace"
            name="chromiumos/third_party/apitrace"
            revision="refs/heads/master" />
@@ -293,26 +291,20 @@
            name="chromiumos/third_party/apitrace"
            revision="refs/heads/debian"
            groups="notdefault,crostini" />
+  <project path="src/third_party/arm-trusted-firmware"
+           name="chromiumos/third_party/arm-trusted-firmware"
+           revision="refs/heads/master" />
   <project path="src/third_party/atrusctl"
            name="chromiumos/third_party/atrusctl"
            revision="refs/heads/master" />
   <project path="src/third_party/autotest/files"
            name="chromiumos/third_party/autotest"
            groups="buildtools,labtools,devserver" />
-  <project path="src/third_party/labpack/files"
-           name="chromiumos/third_party/labpack"
-           groups="labtools" />
   <project path="src/third_party/autotest/files/server/cros/faft/fw-testing-configs"
            name="chromiumos/platform/fw-testing-configs"
            groups="buildtools,labtools,devserver,firmware" />
   <project path="src/third_party/aver-updater"
            name="chromiumos/third_party/aver-updater"
-           revision="refs/heads/master" />
-  <project path="src/third_party/fastrpc"
-           name="chromiumos/third_party/fastrpc"
-           revision="refs/heads/master" />
-  <project path="src/third_party/libiio"
-           name="chromiumos/third_party/libiio"
            revision="refs/heads/master" />
   <project path="src/third_party/bluez/current"
            name="chromiumos/third_party/bluez"
@@ -358,13 +350,6 @@
            name="chromiumos/third_party/coreboot"
            revision="refs/heads/chromeos-2016.05"
            groups="firmware" />
-
-  <!-- trogdor: qc_blobs -->
-  <project path="src/third_party/coreboot/3rdparty/qc_blobs"
-           name="chromiumos/third_party/coreboot/qc_blobs"
-           revision="refs/heads/upstream/master"
-           groups="firmware" />
-
   <project path="src/third_party/coreboot/3rdparty/amd_blobs"
            name="chromiumos/third_party/coreboot/amd_blobs"
            revision="refs/heads/chromeos"
@@ -376,6 +361,10 @@
   <project path="src/third_party/coreboot/3rdparty/intel-microcode"
            name="chromiumos/third_party/coreboot/intel-microcode"
            revision="refs/heads/master"
+           groups="firmware" />
+  <project path="src/third_party/coreboot/3rdparty/qc_blobs"
+           name="chromiumos/third_party/coreboot/qc_blobs"
+           revision="refs/heads/upstream/master"
            groups="firmware" />
   <project path="src/third_party/cros-adapta"
            name="chromiumos/third_party/cros-adapta"
@@ -399,6 +388,9 @@
            name="chromiumos/third_party/em100"
            revision="refs/heads/master"
            groups="firmware" />
+  <project path="src/third_party/fastrpc"
+           name="chromiumos/third_party/fastrpc"
+           revision="refs/heads/master" />
   <project path="src/third_party/flashmap"
            name="chromiumos/third_party/flashmap"
            revision="refs/heads/master"
@@ -419,10 +411,6 @@
            name="chromiumos/third_party/edk2"
            revision="refs/heads/chromeos-glk"
            groups="firmware" />
-  <project path="src/third_party/amd-firmware/binarypi/picasso-edk2"
-           name="chromiumos/third_party/edk2"
-           revision="refs/heads/pco"
-           groups="firmware" />
   <project path="src/third_party/fwupd"
            name="chromiumos/third_party/fwupd"
            revision="refs/heads/fwupd-1.6.3" />
@@ -437,6 +425,12 @@
            revision="refs/heads/master" />
   <project path="src/third_party/intel-wifi-fw-dump"
            name="chromiumos/third_party/intel-wifi-fw-dump" />
+  <project path="src/third_party/kernel/next"
+           name="chromiumos/third_party/kernel-next"
+           revision="refs/heads/chromeos-next"
+           groups="notdefault,kernel-next">
+    <annotation name="branch-mode" value="tot" />
+  </project>
   <project path="src/third_party/kernel/v3.18"
            name="chromiumos/third_party/kernel"
            revision="refs/heads/chromeos-3.18" />
@@ -461,27 +455,24 @@
   <project path="src/third_party/kernel/v5.4"
            name="chromiumos/third_party/kernel"
            revision="refs/heads/chromeos-5.4" />
-  <project path="src/third_party/kernel/v5.4-manatee"
-           name="chromiumos/third_party/kernel"
-           revision="refs/heads/chromeos-5.4-manatee" />
   <project path="src/third_party/kernel/v5.4-arcvm"
            name="chromiumos/third_party/kernel"
            revision="refs/heads/chromeos-5.4-arcvm" />
-  <project path="src/third_party/kernel/v5.10-arcvm"
+  <project path="src/third_party/kernel/v5.4-manatee"
            name="chromiumos/third_party/kernel"
-           revision="refs/heads/chromeos-5.10-arcvm" />
-  <project path="src/third_party/kernel/next"
-           name="chromiumos/third_party/kernel-next"
-           revision="refs/heads/chromeos-next"
-           groups="notdefault,kernel-next">
-    <annotation name="branch-mode" value="tot" />
-  </project>
+           revision="refs/heads/chromeos-5.4-manatee" />
   <project path="src/third_party/kernel/v5.10"
            name="chromiumos/third_party/kernel"
            revision="refs/heads/chromeos-5.10" />
+  <project path="src/third_party/kernel/v5.10-arcvm"
+           name="chromiumos/third_party/kernel"
+           revision="refs/heads/chromeos-5.10-arcvm" />
   <project path="src/third_party/khronos"
            name="chromiumos/third_party/khronos"
            revision="refs/heads/master" />
+  <project path="src/third_party/labpack/files"
+           name="chromiumos/third_party/labpack"
+           groups="labtools" />
   <project path="src/third_party/lexmark-fax-pnh"
            name="chromiumos/third_party/lexmark-fax-pnh"
            revision="refs/heads/master" />
@@ -499,6 +490,9 @@
            name="chromiumos/third_party/libdrm"
            revision="refs/heads/debian"
            groups="notdefault,crostini" />
+  <project path="src/third_party/libiio"
+           name="chromiumos/third_party/libiio"
+           revision="refs/heads/master" />
   <project path="src/third_party/libmbim"
            name="chromiumos/third_party/libmbim"
            revision="refs/heads/master" />
@@ -544,26 +538,26 @@
   <project path="src/third_party/mesa-freedreno"
            name="chromiumos/third_party/mesa"
            revision="refs/heads/chromeos-freedreno" />
-  <project path="src/third_party/mesa-iris"
-           name="chromiumos/third_party/mesa"
-           revision="refs/heads/chromeos-iris" />
   <project path="src/third_party/mesa-img"
            name="chromiumos/third_party/mesa"
            revision="refs/heads/mesa-19.0" />
+  <project path="src/third_party/mesa-iris"
+           name="chromiumos/third_party/mesa"
+           revision="refs/heads/chromeos-iris" />
   <project path="src/third_party/mesa-reven"
            name="chromiumos/third_party/mesa"
            revision="refs/heads/chromeos-reven" />
   <project path="src/third_party/mimo-updater"
            name="chromiumos/third_party/mimo-updater"
            revision="refs/heads/master" />
-  <project path="src/third_party/modp_b64"
-           name="aosp/platform/external/modp_b64"
-           revision="refs/heads/master" />
   <project path="src/third_party/mmc-utils"
            name="chromiumos/third_party/mmc-utils"
            revision="refs/heads/master" />
   <project path="src/third_party/modemmanager-next"
            name="chromiumos/third_party/modemmanager-next"
+           revision="refs/heads/master" />
+  <project path="src/third_party/modp_b64"
+           name="aosp/platform/external/modp_b64"
            revision="refs/heads/master" />
   <project path="src/third_party/novatek-tcon-fw-update-tool"
            name="chromiumos/third_party/novatek-tcon-fw-update-tool"
@@ -599,10 +593,18 @@
   <project path="src/third_party/rust-vmm/vhost"
            name="chromiumos/third_party/rust-vmm/vhost"
            groups="crosvm" />
+  <project path="src/third_party/rust_crates"
+           name="chromiumos/third_party/rust_crates"
+           groups="notdefault,bluetooth">
+    <annotation name="branch-mode" value="pin" />
+  </project>
   <project path="src/third_party/seabios"
            name="chromiumos/third_party/seabios"
            revision="refs/heads/chromeos-2014.11.03"
            groups="firmware" />
+  <project path="src/third_party/shellcheck"
+           name="chromiumos/third_party/shellcheck"
+           revision="refs/heads/chromeos-0.7" />
   <project path="src/third_party/sigrok-cli"
            name="chromiumos/third_party/libsigrok-cli"
            revision="refs/heads/chromeos" />
@@ -647,13 +649,16 @@
            name="chromiumos/third_party/virglrenderer"
            revision="refs/heads/master"
            groups="crosvm" />
+  <project path="src/third_party/virtual-usb-printer"
+           name="chromiumos/third_party/virtual-usb-printer"
+           revision="refs/heads/master" />
   <project path="src/third_party/webrtc-apm"
            name="chromiumos/third_party/webrtc-apm" />
-  <project path="src/third_party/wpa_supplicant"
-           name="chromiumos/third_party/hostap"
-           revision="refs/heads/master" />
   <project path="src/third_party/Wi-FiTestSuite-Linux-DUT"
            name="chromiumos/third_party/Wi-FiTestSuite-Linux-DUT"
+           revision="refs/heads/master" />
+  <project path="src/third_party/wpa_supplicant"
+           name="chromiumos/third_party/hostap"
            revision="refs/heads/master" />
   <project path="src/third_party/wpa_supplicant-cros/current"
            name="chromiumos/third_party/hostap"
@@ -661,15 +666,17 @@
   <project path="src/third_party/wpa_supplicant-cros/next"
            name="chromiumos/third_party/hostap"
            revision="refs/heads/wpa_supplicant-2.9.1" />
-  <project path="src/third_party/virtual-usb-printer"
-           name="chromiumos/third_party/virtual-usb-printer"
-           revision="refs/heads/master" />
   <project path="src/third_party/xfstests"
            name="external/git.kernel.org/fs/xfs/xfstests-dev"
            revision="refs/heads/master" />
-  <project path="src/third_party/shellcheck"
-           name="chromiumos/third_party/shellcheck"
-           revision="refs/heads/chromeos-0.7" />
+  <project path="src/third_party/zephyr/cmsis"
+           name="chromiumos/third_party/zephyr/cmsis"
+           revision="refs/heads/chromeos-main"
+           groups="firmware,zephyr" />
+  <project path="src/third_party/zephyr/hal_stm32"
+           name="chromiumos/third_party/zephyr/hal_stm32"
+           revision="refs/heads/chromeos-main"
+           groups="firmware,zephyr" />
   <project path="src/third_party/zephyr/main/v2.6"
            name="chromiumos/third_party/zephyr"
            revision="refs/heads/chromeos-v2.6"
@@ -681,14 +688,6 @@
   <project path="src/third_party/zephyr/main/v2.8"
            name="chromiumos/third_party/zephyr"
            revision="refs/heads/chromeos-v2.8"
-           groups="firmware,zephyr" />
-  <project path="src/third_party/zephyr/cmsis"
-           name="chromiumos/third_party/zephyr/cmsis"
-           revision="refs/heads/chromeos-main"
-           groups="firmware,zephyr" />
-  <project path="src/third_party/zephyr/hal_stm32"
-           name="chromiumos/third_party/zephyr/hal_stm32"
-           revision="refs/heads/chromeos-main"
            groups="firmware,zephyr" />
   <project path="src/third_party/zephyr/nanopb"
            name="chromiumos/third_party/zephyr/nanopb"
