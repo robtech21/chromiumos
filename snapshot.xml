@@ -97,7 +97,7 @@
   <project name="chromiumos/infra_virtualenv" path="infra_virtualenv" revision="cab8a95f2961561eb56a95d6f2bfc685686db75a" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,buildtools,chromeos-admin,labtools,sysmon,devserver"/>
   <project name="chromiumos/manifest" path="manifest" revision="95199dc231ac6e90ecf12b00ef59b1b59ed31384" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/overlays/board-overlays" path="src/overlays" revision="f3cfd5599b966479d1e8173e5fbc4f7574ba9d76" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware"/>
-  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="3b506557a286af1c7384b0a2d647631a3e728b18" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" sync-c="true"/>
+  <project name="chromiumos/overlays/chromiumos-overlay" path="src/third_party/chromiumos-overlay" revision="7c4a29b52db8a8c64b2e8b0aed4e24c8b966c444" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools" sync-c="true"/>
   <project name="chromiumos/overlays/eclass-overlay" path="src/third_party/eclass-overlay" revision="6cc9fa09544c66b7bafdf9f08a5c6ada17c7cf3c" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools"/>
   <project name="chromiumos/overlays/portage-stable" path="src/third_party/portage-stable" revision="6226520ffb31b3486e8812731b275c7e534f1541" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="minilayout,firmware,labtools"/>
   <project name="chromiumos/platform/assets" path="src/platform/assets" revision="3f8d39f13d447a12d7766572b8d272d0d4164d68" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
@@ -161,7 +161,7 @@
   <project name="chromiumos/platform/pinweaver" path="src/platform/pinweaver" revision="71a12656858f452af4b5410cee156526b9f65c62" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/satlab" path="src/platform/satlab" revision="6919237e3e4bf0d13548d53f7cc07725e8e23a2f" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="notdefault,satlab"/>
   <project name="chromiumos/platform/tast" path="src/platform/tast" revision="b5c02010f5b15066c4d0ea39a11e8fe195d8029e" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
-  <project name="chromiumos/platform/tast-tests" path="src/platform/tast-tests" revision="130d6345a1a8997e23f32d27ae9056a1ac0a596b" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
+  <project name="chromiumos/platform/tast-tests" path="src/platform/tast-tests" revision="e08a41a336ac7fbcc76ea2484c48fe1ea1a4a4d7" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/tauto" path="src/platform/tauto" revision="cd2b0e21d5a7e00caa6d8e3dc9e5398abd120698" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
   <project name="chromiumos/platform/touch_firmware_test" path="src/platform/touch_firmware_test" revision="2385881e6a19a904687ced52f27541b716e8168c" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="firmware"/>
   <project name="chromiumos/platform/touch_updater" path="src/platform/touch_updater" revision="86a57d927a49ce9fe9ffc181ed3bc0acfbff6299" upstream="refs/heads/main" dest-branch="refs/heads/main"/>
@@ -225,7 +225,7 @@
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/upstream" revision="6be711548944d311c3798ea47ac6c3f07bc304d0" upstream="refs/heads/merge/continuous/chromeos-kernelupstream-5.15" dest-branch="refs/heads/merge/continuous/chromeos-kernelupstream-5.15">
     <annotation name="branch-mode" value="pin"/>
   </project>
-  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/bluetooth-next" revision="21a241b3bc153b346987a28cc132674646589e02" upstream="refs/heads/bluetooth-next" dest-branch="refs/heads/bluetooth-next" groups="notdefault,bluetooth">
+  <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/bluetooth-next" revision="899663be5e75dc0174dc8bda0b5e6826edf0b29a" upstream="refs/heads/bluetooth-next" dest-branch="refs/heads/bluetooth-next" groups="notdefault,bluetooth">
     <annotation name="branch-mode" value="pin"/>
   </project>
   <project name="chromiumos/third_party/kernel" path="src/third_party/kernel/v3.18" revision="48d3d74ca8dbbdf3a241609a2ccb6e6599b4d95f" upstream="refs/heads/chromeos-3.18" dest-branch="refs/heads/chromeos-3.18"/>
@@ -310,7 +310,7 @@
   <project name="chromiumos/third_party/zephyr/hal_stm32" path="src/third_party/zephyr/hal_stm32" revision="5b1894c8d6ad65bc195ece88f9d69d6d89ce894a" upstream="refs/heads/chromeos-main" dest-branch="refs/heads/chromeos-main" groups="firmware,zephyr"/>
   <project name="chromiumos/third_party/zephyr/nanopb" path="src/third_party/zephyr/nanopb" revision="32a21483d6586851edfa1d8491beb3df442e90c6" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="firmware,zephyr"/>
   <project name="external/git.kernel.org/fs/xfs/xfstests-dev" path="src/third_party/xfstests" revision="d17a88e909568b044ada362ee19ca2d1dffc542c" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
-  <project name="external/github.com/llvm/llvm-project" path="src/third_party/llvm-project" revision="2897b67665d1fa1177531e78cc93b3704c5aea12" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="notdefault"/>
+  <project name="external/github.com/llvm/llvm-project" path="src/third_party/llvm-project" revision="7e1dc12f440b2d4aef71d790be94c65d7e2b86a2" upstream="refs/heads/main" dest-branch="refs/heads/main" groups="notdefault"/>
   <project name="infra/luci/client-py" path="chromite/third_party/swarming.client" remote="chromium" revision="34b20305c7a69eb89e1abd5e2a94708db999f0a9" groups="buildtools,chromeos-admin,firmware,labtools,minilayout"/>
   <project name="linux-syscall-support" path="src/third_party/breakpad/src/third_party/lss" revision="e1e7b0ad8ee99a875b272c8e33e308472e897660"/>
   <project name="platform/external/bsdiff" path="src/aosp/external/bsdiff" remote="aosp" revision="f7c65e157b50f599ef328026291c2d4b18fac68f" upstream="refs/heads/master" dest-branch="refs/heads/master"/>
@@ -324,7 +324,7 @@
   <project name="weave/libweave" path="src/weave/libweave" revision="62c39d7cb132ba0864852fed6e109a5b231c7ed2" upstream="refs/heads/main" dest-branch="refs/heads/main">
     <annotation name="branch-mode" value="pin"/>
   </project>
-  <project name="website" revision="d154bcbe2f3f74b71490f11b40441d8629b25e13" upstream="refs/heads/main" dest-branch="refs/heads/main">
+  <project name="website" revision="d1d2e86198867d96fa22ad999354ae4fb25f1a68" upstream="refs/heads/main" dest-branch="refs/heads/main">
     <annotation name="branch-mode" value="tot"/>
   </project>
   
