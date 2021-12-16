@@ -2,11 +2,17 @@
 <manifest>
   <remote name="cros"
           fetch="https://chromium.googlesource.com"
-          review="https://chromium-review.googlesource.com" />
+          review="https://chromium-review.googlesource.com">
+    <annotation name="public" value="true" />
+  </remote>
   <remote name="chromium"
           alias="cros"
-          fetch="https://chromium.googlesource.com/" />
+          fetch="https://chromium.googlesource.com/">
+    <annotation name="public" value="true" />
+  </remote>
   <remote name="aosp"
           fetch="https://android.googlesource.com"
-          review="https://android-review.googlesource.com" />
+          review="https://android-review.googlesource.com">
+    <annotation name="public" value="true" />
+  </remote>
 </manifest>
