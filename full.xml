@@ -400,15 +400,6 @@
            revision="refs/heads/master" />
   <project path="src/third_party/intel-wifi-fw-dump"
            name="chromiumos/third_party/intel-wifi-fw-dump" />
-  <project path="src/third_party/kernel/bluetooth-next"
-           name="chromiumos/third_party/kernel"
-           revision="refs/heads/bluetooth-next"
-           groups="notdefault,bluetooth">
-    <!-- This repo is only to be synced with BlueZ upstream and there are no
-         changes from Chromium OS. This repo is used by developers only and
-         doesn't need to be copied for branch. -->
-    <annotation name="branch-mode" value="drop" />
-  </project>
   <project path="src/third_party/kernel/next"
            name="chromiumos/third_party/kernel-next"
            revision="refs/heads/chromeos-next"
